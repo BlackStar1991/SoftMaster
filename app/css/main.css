@@ -902,8 +902,7 @@ button {
     height: 80px; }
   .bl_logo__word {
     display: inline-block;
-    margin-left: 28px;
-    margin-top: 14px;
+    margin-left: 23px;
     background-image: url(../img/sprite.png);
     background-position: 0px 0px;
     width: 108px;
@@ -911,11 +910,12 @@ button {
 
 .bl_callBack {
   float: left;
-  margin-top: 12px;
+  margin-top: 10px;
   display: inline-block;
   width: 50%; }
   .bl_callBack__icon {
     float: left;
+    margin-left: 10px;
     display: inline-block;
     background-image: url(../img/sprite.png);
     background-position: 0px -150px;
@@ -923,25 +923,25 @@ button {
     height: 60px; }
   .bl_callBack__telephone {
     float: left;
-    margin-top: 2px;
-    margin-left: 31px;
-    width: 178px;
+    margin-left: 25px;
+    width: 172px;
     display: inline-block; }
   .bl_callBack__telNumber {
     display: inline-block;
-    font-weight: 500;
-    line-height: 24px; }
+    font-size: 18px;
+    line-height: 22px;
+    font-family: "D I N ProBold", sans-serif; }
   .bl_callBack__button {
     display: inline-block;
     height: 29px;
+    width: 129px;
     margin-left: 2px;
     border-radius: 20px;
     margin-top: 6px;
-    padding: 5px 22px;
+    padding: 5px;
     color: white;
-    font-family: "D I N Pro", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
+    font-family: "D I N ProBold", sans-serif;
+    font-size: 10px;
     background-color: #e02c33;
     text-transform: uppercase;
     transition: all, 0.3s; }
@@ -963,19 +963,20 @@ button {
             flex-wrap: wrap;
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
-            justify-content: space-between;
-    border: 1px solid #0f0; }
+            justify-content: space-between; }
   .bl_mainNavigation__item {
     display: inline-block;
     border-bottom: 2px solid #e02c33; }
+    .bl_mainNavigation__item:nth-child(1) a {
+      padding: 5px 0; }
   .bl_mainNavigation__link {
     text-align: center;
-    font-size: 24px;
+    font-size: 20px;
     font-family: "D I N Pro", sans-serif;
     display: inline-block;
     width: 100%;
-    height: 19px;
-    line-height: 24px;
+    height: 100%;
+    line-height: 14px;
     padding: 5px 15px; }
 
 /*********************************************/
@@ -989,6 +990,11 @@ button {
   padding: 0;
   margin: 0 !important;
   overflow: hidden; }
+
+.bl_offers {
+  width: 100%;
+  min-height: 636px;
+  background: url("../img/bg_underheader.jpg") no-repeat 50% 50%; }
 
 /*********************************************/
 /*FOOTER*/

@@ -803,16 +803,77 @@ hr {
 /*SIZES*/
 /*********************************************/
 /*********************************************/
+/*FONT FACE*/
+/*********************************************/
+/*********************************************/
+/*TRIANGLES*/
+/*********************************************/
+/*********************************************/
+/*CUT TEXT WITH ELLIPSIS*/
+/*********************************************/
+/*********************************************/
 /*FONTS*/
 /*********************************************/
+@font-face {
+  font-family: "D I N Pro";
+  font-style: eot ttf woff woff2;
+  font-weight: normal;
+  src: url("../fonts/DINPro/DINPro.eot?") format("eot"), url("../fonts/DINPro/DINPro.woff2") format("woff2"), url("../fonts/DINPro/DINPro.woff") format("woff"), url("../fonts/DINPro/DINPro.ttf") format("truetype"), url('../fonts/DINPro/DINPro.svg#str-replace("D I N Pro", " ", "_")') format("svg"); }
+
+@font-face {
+  font-family: "D I N ProBold";
+  font-style: eot ttf woff woff2;
+  font-weight: normal;
+  src: url("../fonts/DINProBold/DINPro-Bold.eot?") format("eot"), url("../fonts/DINProBold/DINPro-Bold.woff2") format("woff2"), url("../fonts/DINProBold/DINPro-Bold.woff") format("woff"), url("../fonts/DINProBold/DINPro-Bold.ttf") format("truetype"), url('../fonts/DINProBold/DINPro-Bold.svg#str-replace("D I N ProBold", " ", "_")') format("svg"); }
+
 /*********************************************/
 /*MAIN STYLES*/
 /*********************************************/
 body {
-  font-family: sans-serif;
-  font-size: 16px;
+  font-family: "D I N Pro", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
   min-width: 320px;
   position: relative; }
+
+.mainWrapper {
+  position: relative;
+  width: 100%;
+  min-width: 320px;
+  height: 100%;
+  padding: 0;
+  margin: 0 !important; }
+
+.wrapperBlock {
+  position: relative;
+  width: 100%;
+  height: 100%; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+a {
+  text-decoration: none;
+  color: #000; }
+  a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: #000; }
+
+p {
+  margin: 0;
+  padding: 0; }
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+
+button {
+  outline: none;
+  border: none;
+  padding: 0;
+  margin: 0; }
 
 /*********************************************/
 /*TYPOGRAPHY*/
@@ -820,31 +881,115 @@ body {
 /*********************************************/
 /*STICKY FOOTER*/
 /*********************************************/
-.body {
-  display: -ms-flexbox;
-  display: flex;
-  min-height: 100vh;
-  -ms-flex-direction: column;
-      flex-direction: column; }
-
-.main {
-  -ms-flex: 1;
-      flex: 1; }
-
 /*********************************************/
 /*HEADER*/
 /*********************************************/
-img {
-  margin-left: 5%; }
+.bl_navigation {
+  width: 100%;
+  min-height: 89px;
+  border-bottom: 1px solid #e02d34; }
 
-.block {
-  font-size: 2em;
-  display: -ms-flexbox;
-  display: flex; }
+.bl_logo {
+  display: inline-block;
+  float: left;
+  width: 50%; }
+  .bl_logo__icon {
+    display: inline-block;
+    margin-top: 4px;
+    background-image: url(../img/sprite.png);
+    background-position: 0px -65px;
+    width: 72px;
+    height: 80px; }
+  .bl_logo__word {
+    display: inline-block;
+    margin-left: 28px;
+    margin-top: 14px;
+    background-image: url(../img/sprite.png);
+    background-position: 0px 0px;
+    width: 108px;
+    height: 60px; }
+
+.bl_callBack {
+  float: left;
+  margin-top: 12px;
+  display: inline-block;
+  width: 50%; }
+  .bl_callBack__icon {
+    float: left;
+    display: inline-block;
+    background-image: url(../img/sprite.png);
+    background-position: 0px -150px;
+    width: 61px;
+    height: 60px; }
+  .bl_callBack__telephone {
+    float: left;
+    margin-top: 2px;
+    margin-left: 31px;
+    width: 178px;
+    display: inline-block; }
+  .bl_callBack__telNumber {
+    display: inline-block;
+    font-weight: 500;
+    line-height: 24px; }
+  .bl_callBack__button {
+    display: inline-block;
+    height: 29px;
+    margin-left: 2px;
+    border-radius: 20px;
+    margin-top: 6px;
+    padding: 5px 22px;
+    color: white;
+    font-family: "D I N Pro", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: #e02c33;
+    text-transform: uppercase;
+    transition: all, 0.3s; }
+    .bl_callBack__button:hover {
+      background-color: #ea2c0f;
+      transition: all, 0.3s; }
+
+.bl_mainNavigation {
+  color: #2b1f2b;
+  line-height: 24px; }
+  .bl_mainNavigation__fullGroup {
+    margin-top: 32px;
+    width: 100%;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border: 1px solid #0f0; }
+  .bl_mainNavigation__item {
+    display: inline-block;
+    border-bottom: 2px solid #e02c33; }
+  .bl_mainNavigation__link {
+    text-align: center;
+    font-size: 24px;
+    font-family: "D I N Pro", sans-serif;
+    display: inline-block;
+    width: 100%;
+    height: 19px;
+    line-height: 24px;
+    padding: 5px 15px; }
 
 /*********************************************/
 /*SECTIONS*/
 /*********************************************/
+.mainWrapper {
+  position: relative;
+  width: 100%;
+  min-width: 320px;
+  height: 100%;
+  padding: 0;
+  margin: 0 !important;
+  overflow: hidden; }
+
 /*********************************************/
 /*FOOTER*/
 /*********************************************/
@@ -863,21 +1008,24 @@ img {
 /*********************************************/
 /*Desktop First Method*/
 /*********************************************/
-/* Large Devices, Wide Screens */
-/* Medium Devices, Desktops */
-/* Small Devices, Tablets */
-/* Extra Small Devices, Phones */
+/* Large Devices, Wide Screens 1280px */
+/* Medium Devices, Desktops 992px */
+/* Small Devices, Tablets 768px */
+/* Extra Small Devices, Phones 480px */
 @media only screen and (max-width: 30em) {
   /*Disable Animation on Mobile Devices*/
   .animated {
     /*CSS transitions*/
     transition-property: none !important;
     /*CSS transforms*/
+    -ms-transform: none !important;
+    -webkit-transform: none !important;
     transform: none !important;
     /*CSS animations*/
+    -webkit-animation: none !important;
     animation: none !important; } }
 
-/* Custom, iPhone Retina */
+/* Custom, iPhone Retina 320px */
 /*********************************************/
 /*Mobile First Method*/
 /*********************************************/

@@ -1,0 +1,114 @@
+.bl_navigation{
+  width: 100%;
+  min-height: 89px;
+  border-bottom: 1px solid $color_lightRaspberry;
+}
+
+.bl_logo{
+  display: inline-block;
+  float: left;
+  width: 50%;
+
+  &__icon{
+    display: inline-block;
+    margin-top: 4px;
+    @include sprite($logo-icon);
+  }
+  &__word{
+    display: inline-block;
+    margin-left: 28px;
+    margin-top: 14px;
+    @include sprite($logo-word);
+  }
+}
+
+.bl_callBack{
+  float: left;
+  margin-top: 12px;
+  display: inline-block;
+  width: 50%;
+
+  &__icon{
+    float: left;
+    display: inline-block;
+    @include sprite($phone_circle_icon);
+  }
+
+  &__telephone{
+    float: left;
+    margin-top: 2px;
+    margin-left: 31px;
+    width: 178px;/////////////////////////////////////////////
+    display: inline-block;
+  }
+
+
+  &__telNumber{
+    display: inline-block;
+
+    font-weight: 500;
+    line-height: 24px;
+  }
+
+  &__button{
+    display: inline-block;
+    height: 29px;
+    margin-left: 2px;
+    border-radius: 20px;
+    margin-top: 6px;
+    padding: 5px 22px;
+    color: white;
+    font-family:$DIN;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: $color_red;
+    text-transform: uppercase;
+    transition: all, 0.3s;
+
+    &:hover{
+      background-color: $color_darkRaspberry;
+      transition: all, 0.3s;
+    }
+  }
+
+}
+
+.bl_mainNavigation{
+  color: $color_text;
+  line-height: 24px;
+  &__fullGroup{
+    margin-top: 32px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    border: 1px solid #0f0;
+
+
+
+
+  }
+  &__item{
+    display: inline-block;
+    border-bottom: 2px solid $color_red;
+
+    &:first-child a{
+      //padding: 0;
+    }
+
+  }
+  &__link{
+    text-align: center;
+    font-size: 24px;
+    font-family:$DIN;
+    display: inline-block;
+    width: 100%;
+    height: 19px;
+    line-height: 24px;
+    padding: 5px 15px;
+
+  }
+
+
+}

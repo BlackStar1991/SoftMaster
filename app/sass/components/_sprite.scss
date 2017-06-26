@@ -1,0 +1,398 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$-one-c-icon-name: 'OneC_icon';
+$-one-c-icon-x: 140px;
+$-one-c-icon-y: 150px;
+$-one-c-icon-offset-x: -140px;
+$-one-c-icon-offset-y: -150px;
+$-one-c-icon-width: 79px;
+$-one-c-icon-height: 34px;
+$-one-c-icon-total-width: 361px;
+$-one-c-icon-total-height: 267px;
+$-one-c-icon-image: '../img/sprite.png';
+$-one-c-icon: (140px, 150px, -140px, -150px, 79px, 34px, 361px, 267px, '../img/sprite.png', 'OneC_icon', );
+$calendar-icon-name: 'calendar_icon';
+$calendar-icon-x: 315px;
+$calendar-icon-y: 196px;
+$calendar-icon-offset-x: -315px;
+$calendar-icon-offset-y: -196px;
+$calendar-icon-width: 46px;
+$calendar-icon-height: 38px;
+$calendar-icon-total-width: 361px;
+$calendar-icon-total-height: 267px;
+$calendar-icon-image: '../img/sprite.png';
+$calendar-icon: (315px, 196px, -315px, -196px, 46px, 38px, 361px, 267px, '../img/sprite.png', 'calendar_icon', );
+$cart-of-users-icon-name: 'cartOfUsers_icon';
+$cart-of-users-icon-x: 315px;
+$cart-of-users-icon-y: 151px;
+$cart-of-users-icon-offset-x: -315px;
+$cart-of-users-icon-offset-y: -151px;
+$cart-of-users-icon-width: 46px;
+$cart-of-users-icon-height: 40px;
+$cart-of-users-icon-total-width: 361px;
+$cart-of-users-icon-total-height: 267px;
+$cart-of-users-icon-image: '../img/sprite.png';
+$cart-of-users-icon: (315px, 151px, -315px, -151px, 46px, 40px, 361px, 267px, '../img/sprite.png', 'cartOfUsers_icon', );
+$cart-icon-name: 'cart_icon';
+$cart-icon-x: 180px;
+$cart-icon-y: 0px;
+$cart-icon-offset-x: -180px;
+$cart-icon-offset-y: 0px;
+$cart-icon-width: 68px;
+$cart-icon-height: 55px;
+$cart-icon-total-width: 361px;
+$cart-icon-total-height: 267px;
+$cart-icon-image: '../img/sprite.png';
+$cart-icon: (180px, 0px, -180px, 0px, 68px, 55px, 361px, 267px, '../img/sprite.png', 'cart_icon', );
+$clock-icon-name: 'clock_icon';
+$clock-icon-x: 0px;
+$clock-icon-y: 215px;
+$clock-icon-offset-x: 0px;
+$clock-icon-offset-y: -215px;
+$clock-icon-width: 46px;
+$clock-icon-height: 52px;
+$clock-icon-total-width: 361px;
+$clock-icon-total-height: 267px;
+$clock-icon-image: '../img/sprite.png';
+$clock-icon: (0px, 215px, 0px, -215px, 46px, 52px, 361px, 267px, '../img/sprite.png', 'clock_icon', );
+$clock-white-icon-name: 'clock_white_icon';
+$clock-white-icon-x: 51px;
+$clock-white-icon-y: 215px;
+$clock-white-icon-offset-x: -51px;
+$clock-white-icon-offset-y: -215px;
+$clock-white-icon-width: 46px;
+$clock-white-icon-height: 51px;
+$clock-white-icon-total-width: 361px;
+$clock-white-icon-total-height: 267px;
+$clock-white-icon-image: '../img/sprite.png';
+$clock-white-icon: (51px, 215px, -51px, -215px, 46px, 51px, 361px, 267px, '../img/sprite.png', 'clock_white_icon', );
+$computer-icon-name: 'computer_icon';
+$computer-icon-x: 315px;
+$computer-icon-y: 106px;
+$computer-icon-offset-x: -315px;
+$computer-icon-offset-y: -106px;
+$computer-icon-width: 46px;
+$computer-icon-height: 40px;
+$computer-icon-total-width: 361px;
+$computer-icon-total-height: 267px;
+$computer-icon-image: '../img/sprite.png';
+$computer-icon: (315px, 106px, -315px, -106px, 46px, 40px, 361px, 267px, '../img/sprite.png', 'computer_icon', );
+$cube-icon-name: 'cube_icon';
+$cube-icon-x: 253px;
+$cube-icon-y: 0px;
+$cube-icon-offset-x: -253px;
+$cube-icon-offset-y: 0px;
+$cube-icon-width: 57px;
+$cube-icon-height: 57px;
+$cube-icon-total-width: 361px;
+$cube-icon-total-height: 267px;
+$cube-icon-image: '../img/sprite.png';
+$cube-icon: (253px, 0px, -253px, 0px, 57px, 57px, 361px, 267px, '../img/sprite.png', 'cube_icon', );
+$hands-on-keyboards-icon-name: 'handsOnKeyboards_icon';
+$hands-on-keyboards-icon-x: 180px;
+$hands-on-keyboards-icon-y: 60px;
+$hands-on-keyboards-icon-offset-x: -180px;
+$hands-on-keyboards-icon-offset-y: -60px;
+$hands-on-keyboards-icon-width: 61px;
+$hands-on-keyboards-icon-height: 61px;
+$hands-on-keyboards-icon-total-width: 361px;
+$hands-on-keyboards-icon-total-height: 267px;
+$hands-on-keyboards-icon-image: '../img/sprite.png';
+$hands-on-keyboards-icon: (180px, 60px, -180px, -60px, 61px, 61px, 361px, 267px, '../img/sprite.png', 'handsOnKeyboards_icon', );
+$hands-icon-name: 'hands_icon';
+$hands-icon-x: 113px;
+$hands-icon-y: 69px;
+$hands-icon-offset-x: -113px;
+$hands-icon-offset-y: -69px;
+$hands-icon-width: 61px;
+$hands-icon-height: 64px;
+$hands-icon-total-width: 361px;
+$hands-icon-total-height: 267px;
+$hands-icon-image: '../img/sprite.png';
+$hands-icon: (113px, 69px, -113px, -69px, 61px, 64px, 361px, 267px, '../img/sprite.png', 'hands_icon', );
+$key-icon-name: 'key_icon';
+$key-icon-x: 102px;
+$key-icon-y: 215px;
+$key-icon-offset-x: -102px;
+$key-icon-offset-y: -215px;
+$key-icon-width: 47px;
+$key-icon-height: 49px;
+$key-icon-total-width: 361px;
+$key-icon-total-height: 267px;
+$key-icon-image: '../img/sprite.png';
+$key-icon: (102px, 215px, -102px, -215px, 47px, 49px, 361px, 267px, '../img/sprite.png', 'key_icon', );
+$left-top-arrow-icon-name: 'left-top_arrow__icon';
+$left-top-arrow-icon-x: 278px;
+$left-top-arrow-icon-y: 175px;
+$left-top-arrow-icon-offset-x: -278px;
+$left-top-arrow-icon-offset-y: -175px;
+$left-top-arrow-icon-width: 18px;
+$left-top-arrow-icon-height: 20px;
+$left-top-arrow-icon-total-width: 361px;
+$left-top-arrow-icon-total-height: 267px;
+$left-top-arrow-icon-image: '../img/sprite.png';
+$left-top-arrow-icon: (278px, 175px, -278px, -175px, 18px, 20px, 361px, 267px, '../img/sprite.png', 'left-top_arrow__icon', );
+$left-arrow-big-name: 'left_arrow__big';
+$left-arrow-big-x: 239px;
+$left-arrow-big-y: 215px;
+$left-arrow-big-offset-x: -239px;
+$left-arrow-big-offset-y: -215px;
+$left-arrow-big-width: 25px;
+$left-arrow-big-height: 38px;
+$left-arrow-big-total-width: 361px;
+$left-arrow-big-total-height: 267px;
+$left-arrow-big-image: '../img/sprite.png';
+$left-arrow-big: (239px, 215px, -239px, -215px, 25px, 38px, 361px, 267px, '../img/sprite.png', 'left_arrow__big', );
+$left-arrow-icon-name: 'left_arrow__icon';
+$left-arrow-icon-x: 224px;
+$left-arrow-icon-y: 150px;
+$left-arrow-icon-offset-x: -224px;
+$left-arrow-icon-offset-y: -150px;
+$left-arrow-icon-width: 16px;
+$left-arrow-icon-height: 24px;
+$left-arrow-icon-total-width: 361px;
+$left-arrow-icon-total-height: 267px;
+$left-arrow-icon-image: '../img/sprite.png';
+$left-arrow-icon: (224px, 150px, -224px, -150px, 16px, 24px, 361px, 267px, '../img/sprite.png', 'left_arrow__icon', );
+$like-icon-name: 'like_icon';
+$like-icon-x: 315px;
+$like-icon-y: 239px;
+$like-icon-offset-x: -315px;
+$like-icon-offset-y: -239px;
+$like-icon-width: 26px;
+$like-icon-height: 25px;
+$like-icon-total-width: 361px;
+$like-icon-total-height: 267px;
+$like-icon-image: '../img/sprite.png';
+$like-icon: (315px, 239px, -315px, -239px, 26px, 25px, 361px, 267px, '../img/sprite.png', 'like_icon', );
+$logo-icon-name: 'logo_icon';
+$logo-icon-x: 0px;
+$logo-icon-y: 65px;
+$logo-icon-offset-x: 0px;
+$logo-icon-offset-y: -65px;
+$logo-icon-width: 72px;
+$logo-icon-height: 80px;
+$logo-icon-total-width: 361px;
+$logo-icon-total-height: 267px;
+$logo-icon-image: '../img/sprite.png';
+$logo-icon: (0px, 65px, 0px, -65px, 72px, 80px, 361px, 267px, '../img/sprite.png', 'logo_icon', );
+$logo-word-name: 'logo_word';
+$logo-word-x: 0px;
+$logo-word-y: 0px;
+$logo-word-offset-x: 0px;
+$logo-word-offset-y: 0px;
+$logo-word-width: 108px;
+$logo-word-height: 60px;
+$logo-word-total-width: 361px;
+$logo-word-total-height: 267px;
+$logo-word-image: '../img/sprite.png';
+$logo-word: (0px, 0px, 0px, 0px, 108px, 60px, 361px, 267px, '../img/sprite.png', 'logo_word', );
+$money-icon-name: 'money_icon';
+$money-icon-x: 154px;
+$money-icon-y: 215px;
+$money-icon-offset-x: -154px;
+$money-icon-offset-y: -215px;
+$money-icon-width: 50px;
+$money-icon-height: 45px;
+$money-icon-total-width: 361px;
+$money-icon-total-height: 267px;
+$money-icon-image: '../img/sprite.png';
+$money-icon: (154px, 215px, -154px, -215px, 50px, 45px, 361px, 267px, '../img/sprite.png', 'money_icon', );
+$phone-circle-icon-name: 'phone_circle_icon';
+$phone-circle-icon-x: 0px;
+$phone-circle-icon-y: 150px;
+$phone-circle-icon-offset-x: 0px;
+$phone-circle-icon-offset-y: -150px;
+$phone-circle-icon-width: 61px;
+$phone-circle-icon-height: 60px;
+$phone-circle-icon-total-width: 361px;
+$phone-circle-icon-total-height: 267px;
+$phone-circle-icon-image: '../img/sprite.png';
+$phone-circle-icon: (0px, 150px, 0px, -150px, 61px, 60px, 361px, 267px, '../img/sprite.png', 'phone_circle_icon', );
+$pointer-icon-name: 'pointer_icon';
+$pointer-icon-x: 77px;
+$pointer-icon-y: 65px;
+$pointer-icon-offset-x: -77px;
+$pointer-icon-offset-y: -65px;
+$pointer-icon-width: 31px;
+$pointer-icon-height: 41px;
+$pointer-icon-total-width: 361px;
+$pointer-icon-total-height: 267px;
+$pointer-icon-image: '../img/sprite.png';
+$pointer-icon: (77px, 65px, -77px, -65px, 31px, 41px, 361px, 267px, '../img/sprite.png', 'pointer_icon', );
+$right-bottom-arrow-icon-name: 'right-bottom_arrow__icon';
+$right-bottom-arrow-icon-x: 253px;
+$right-bottom-arrow-icon-y: 175px;
+$right-bottom-arrow-icon-offset-x: -253px;
+$right-bottom-arrow-icon-offset-y: -175px;
+$right-bottom-arrow-icon-width: 20px;
+$right-bottom-arrow-icon-height: 20px;
+$right-bottom-arrow-icon-total-width: 361px;
+$right-bottom-arrow-icon-total-height: 267px;
+$right-bottom-arrow-icon-image: '../img/sprite.png';
+$right-bottom-arrow-icon: (253px, 175px, -253px, -175px, 20px, 20px, 361px, 267px, '../img/sprite.png', 'right-bottom_arrow__icon', );
+$right-top-arrow-icon-name: 'right-top_arrow__icon';
+$right-top-arrow-icon-x: 77px;
+$right-top-arrow-icon-y: 111px;
+$right-top-arrow-icon-offset-x: -77px;
+$right-top-arrow-icon-offset-y: -111px;
+$right-top-arrow-icon-width: 19px;
+$right-top-arrow-icon-height: 21px;
+$right-top-arrow-icon-total-width: 361px;
+$right-top-arrow-icon-total-height: 267px;
+$right-top-arrow-icon-image: '../img/sprite.png';
+$right-top-arrow-icon: (77px, 111px, -77px, -111px, 19px, 21px, 361px, 267px, '../img/sprite.png', 'right-top_arrow__icon', );
+$right-arrow-big-name: 'right_arrow__big';
+$right-arrow-big-x: 209px;
+$right-arrow-big-y: 215px;
+$right-arrow-big-offset-x: -209px;
+$right-arrow-big-offset-y: -215px;
+$right-arrow-big-width: 25px;
+$right-arrow-big-height: 39px;
+$right-arrow-big-total-width: 361px;
+$right-arrow-big-total-height: 267px;
+$right-arrow-big-image: '../img/sprite.png';
+$right-arrow-big: (209px, 215px, -209px, -215px, 25px, 39px, 361px, 267px, '../img/sprite.png', 'right_arrow__big', );
+$shield-icon-name: 'shield_icon';
+$shield-icon-x: 315px;
+$shield-icon-y: 51px;
+$shield-icon-offset-x: -315px;
+$shield-icon-offset-y: -51px;
+$shield-icon-width: 42px;
+$shield-icon-height: 50px;
+$shield-icon-total-width: 361px;
+$shield-icon-total-height: 267px;
+$shield-icon-image: '../img/sprite.png';
+$shield-icon: (315px, 51px, -315px, -51px, 42px, 50px, 361px, 267px, '../img/sprite.png', 'shield_icon', );
+$speedometer-icon-name: 'speedometer_icon';
+$speedometer-icon-x: 253px;
+$speedometer-icon-y: 62px;
+$speedometer-icon-offset-x: -253px;
+$speedometer-icon-offset-y: -62px;
+$speedometer-icon-width: 56px;
+$speedometer-icon-height: 48px;
+$speedometer-icon-total-width: 361px;
+$speedometer-icon-total-height: 267px;
+$speedometer-icon-image: '../img/sprite.png';
+$speedometer-icon: (253px, 62px, -253px, -62px, 56px, 48px, 361px, 267px, '../img/sprite.png', 'speedometer_icon', );
+$tag-icon-name: 'tag_icon';
+$tag-icon-x: 315px;
+$tag-icon-y: 0px;
+$tag-icon-offset-x: -315px;
+$tag-icon-offset-y: 0px;
+$tag-icon-width: 46px;
+$tag-icon-height: 46px;
+$tag-icon-total-width: 361px;
+$tag-icon-total-height: 267px;
+$tag-icon-image: '../img/sprite.png';
+$tag-icon: (315px, 0px, -315px, 0px, 46px, 46px, 361px, 267px, '../img/sprite.png', 'tag_icon', );
+$taimer-icon-name: 'taimer_icon';
+$taimer-icon-x: 113px;
+$taimer-icon-y: 0px;
+$taimer-icon-offset-x: -113px;
+$taimer-icon-offset-y: 0px;
+$taimer-icon-width: 62px;
+$taimer-icon-height: 64px;
+$taimer-icon-total-width: 361px;
+$taimer-icon-total-height: 267px;
+$taimer-icon-image: '../img/sprite.png';
+$taimer-icon: (113px, 0px, -113px, 0px, 62px, 64px, 361px, 267px, '../img/sprite.png', 'taimer_icon', );
+$truck-icon-name: 'truck_icon';
+$truck-icon-x: 66px;
+$truck-icon-y: 150px;
+$truck-icon-offset-x: -66px;
+$truck-icon-offset-y: -150px;
+$truck-icon-width: 69px;
+$truck-icon-height: 47px;
+$truck-icon-total-width: 361px;
+$truck-icon-total-height: 267px;
+$truck-icon-image: '../img/sprite.png';
+$truck-icon: (66px, 150px, -66px, -150px, 69px, 47px, 361px, 267px, '../img/sprite.png', 'truck_icon', );
+$user-icon-name: 'user_icon';
+$user-icon-x: 253px;
+$user-icon-y: 115px;
+$user-icon-offset-x: -253px;
+$user-icon-offset-y: -115px;
+$user-icon-width: 47px;
+$user-icon-height: 55px;
+$user-icon-total-width: 361px;
+$user-icon-total-height: 267px;
+$user-icon-image: '../img/sprite.png';
+$user-icon: (253px, 115px, -253px, -115px, 47px, 55px, 361px, 267px, '../img/sprite.png', 'user_icon', );
+$spritesheet-width: 361px;
+$spritesheet-height: 267px;
+$spritesheet-image: '../img/sprite.png';
+$spritesheet-sprites: ($-one-c-icon, $calendar-icon, $cart-of-users-icon, $cart-icon, $clock-icon, $clock-white-icon, $computer-icon, $cube-icon, $hands-on-keyboards-icon, $hands-icon, $key-icon, $left-top-arrow-icon, $left-arrow-big, $left-arrow-icon, $like-icon, $logo-icon, $logo-word, $money-icon, $phone-circle-icon, $pointer-icon, $right-bottom-arrow-icon, $right-top-arrow-icon, $right-arrow-big, $shield-icon, $speedometer-icon, $tag-icon, $taimer-icon, $truck-icon, $user-icon, );
+$spritesheet: (361px, 267px, '../img/sprite.png', $spritesheet-sprites, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

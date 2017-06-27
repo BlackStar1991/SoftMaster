@@ -1165,6 +1165,98 @@ button {
     .bl_advantages__text strong {
       font-weight: 500; }
 
+.bl_cost {
+  margin-top: 68px;
+  width: 100%;
+  min-height: 902px;
+  background: url("../img/bg_table.png") no-repeat 50% 100%; }
+  .bl_cost__wrapper {
+    text-align: center;
+    margin: 0 auto;
+    width: 100%; }
+  .bl_cost__title {
+    margin-top: 135px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+    color: #2b1f2b;
+    font-family: "D I N Pro", sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 80px;
+    border-bottom: 2px solid #e02c33; }
+
+.bl_deadline {
+  margin-top: 60px;
+  width: 478px; }
+  .bl_deadline__head {
+    position: relative;
+    height: 79px;
+    width: 100%;
+    border-radius: 36px;
+    background-color: #e02e35;
+    overflow: hidden; }
+    .bl_deadline__head:after {
+      content: '';
+      position: absolute;
+      bottom: -10%;
+      width: 100%;
+      height: 50%;
+      -webkit-transform: rotate(-6deg) translate(2%, 44%);
+          -ms-transform: rotate(-6deg) translate(2%, 44%);
+              transform: rotate(-6deg) translate(2%, 44%);
+      background-color: #89171a;
+      z-index: 2; }
+    .bl_deadline__head_text {
+      padding-top: 20px;
+      margin-left: 40px;
+      color: white;
+      font-family: "D I N Pro", sans-serif;
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 30px; }
+    .bl_deadline__head_uppercase {
+      text-transform: uppercase; }
+  .bl_deadline__main {
+    position: relative;
+    margin-top: -30px;
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 219px;
+    background-color: #fff;
+    border: 2px solid #e02c33; }
+    .bl_deadline__main_icon {
+      position: relative;
+      display: inline-block;
+      margin-top: 68px;
+      margin-left: 47px;
+      width: 88px;
+      height: 88px;
+      border-radius: 50%;
+      background-color: #e02e35; }
+    .bl_deadline__main_text {
+      display: inline-block;
+      margin-top: 96px;
+      margin-left: 56px;
+      vertical-align: top;
+      color: #2b1f2b;
+      font-family: "D I N Pro", sans-serif;
+      font-size: 47px;
+      font-weight: 500;
+      line-height: 30px; }
+
+.bl_deadline__main_icon-clock {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-image: url(../img/sprite.png);
+  background-position: -313px -170px;
+  width: 46px;
+  height: 51px; }
+
 .bl_decoration__bottomLine:after {
   content: '';
   position: absolute;
@@ -1172,6 +1264,14 @@ button {
   left: calc(50% - 2px);
   width: 2px;
   height: 34px;
+  background-color: #e02c33; }
+
+.bl_decoration__middleLine:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 47px;
+  height: 2px;
   background-color: #e02c33; }
 
 /*********************************************/

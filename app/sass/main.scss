@@ -321,7 +321,117 @@ button {
 
 }
 
+.bl_cost{
+  margin-top: 68px; //////////////////////
 
+  width: 100%;
+  min-height: 902px;
+  background: url("../img/bg_table.png") no-repeat 50% 100%;
+
+  &__wrapper{
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+
+  }
+
+  &__title{
+
+    margin-top: 135px; //////////////////
+
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+    color: $color_text;
+    font-family: $DIN;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 80px;
+    border-bottom: 2px solid $color_red;
+  }
+
+}
+.bl_deadline{
+  margin-top: 60px;
+  width: 478px; ///////////////////
+
+  &__head{
+    position: relative;
+    height: 79px;
+    width: 100%;
+    border-radius: 36px;
+    background-color: $color_raspberry;
+    overflow: hidden;
+    
+    &:after{
+      content: '';
+      position: absolute;
+      bottom: -10%;
+      width: 100%;
+      height: 50%;
+      transform: rotate(-6deg) translate(2%, 44%);
+      background-color: #89171a;
+      z-index:2;
+    }
+
+
+    &_text{
+      padding-top: 20px;
+      margin-left: 40px;
+      color: white;
+      font-family: $DIN;
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 30px;
+    }
+
+    &_uppercase{
+      text-transform: uppercase;
+    }
+  }
+
+  &__main{
+    position: relative;
+    margin-top: -30px;
+    width: 100%;
+    box-sizing: border-box;
+    min-height:219px;
+    background-color: #fff;
+    border: 2px solid $color_red;
+
+    &_icon{
+      position: relative;
+      display: inline-block;
+      margin-top: 68px;
+      margin-left: 47px;
+      width: 88px;
+      height: 88px;
+      border-radius: 50%;
+      background-color: $color_raspberry;
+
+    }
+
+
+    &_text{
+      display: inline-block;
+      margin-top: 96px;
+      margin-left: 56px;
+      vertical-align: top;
+      color: $color_text;
+      font-family: $DIN;
+      font-size: 47px;
+      font-weight: 500;
+      line-height: 30px;
+    }
+  }
+}
+.bl_deadline__main_icon-clock{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  @include sprite($clock-white-icon);
+}
 
 
 
@@ -338,10 +448,21 @@ button {
       width: 2px;
       height: 34px;
       background-color: $color_red;
-      //border-top: 2px solid $color_red;
-
     }
   }
+  &__middleLine{
+
+    &:after{
+      content: '';
+      position: absolute;
+      top: 50%;
+      width: 47px;
+      height: 2px;
+      background-color: $color_red;
+    }
+  }
+
+
 }
 /*********************************************/
 /*FOOTER*/

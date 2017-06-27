@@ -32,7 +32,7 @@
     float: left;
     margin-left: 10px;
     display: inline-block;
-    @include sprite($phone_circle_icon);
+    @include sprite($phone-circle-icon);
   }
 
   &__telephone{

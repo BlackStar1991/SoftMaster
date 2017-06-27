@@ -816,15 +816,15 @@ hr {
 /*********************************************/
 @font-face {
   font-family: "D I N Pro";
-  font-style: eot ttf woff woff2;
-  font-weight: normal;
-  src: url("../fonts/DINPro/DINPro.eot?") format("eot"), url("../fonts/DINPro/DINPro.woff2") format("woff2"), url("../fonts/DINPro/DINPro.woff") format("woff"), url("../fonts/DINPro/DINPro.ttf") format("truetype"), url('../fonts/DINPro/DINPro.svg#str-replace("D I N Pro", " ", "_")') format("svg"); }
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/DINPro/DINPro.eot?") format("eot"), url("../fonts/DINPro/DINPro.ttf") format("truetype"), url("../fonts/DINPro/DINPro.woff") format("woff"), url("../fonts/DINPro/DINPro.woff2") format("woff2"); }
 
 @font-face {
   font-family: "D I N ProBold";
-  font-style: eot ttf woff woff2;
-  font-weight: normal;
-  src: url("../fonts/DINProBold/DINPro-Bold.eot?") format("eot"), url("../fonts/DINProBold/DINPro-Bold.woff2") format("woff2"), url("../fonts/DINProBold/DINPro-Bold.woff") format("woff"), url("../fonts/DINProBold/DINPro-Bold.ttf") format("truetype"), url('../fonts/DINProBold/DINPro-Bold.svg#str-replace("D I N ProBold", " ", "_")') format("svg"); }
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/DINProBold/DINPro-Bold.eot?") format("eot"), url("../fonts/DINProBold/DINPro-Bold.ttf") format("truetype"), url("../fonts/DINProBold/DINPro-Bold.woff") format("woff"), url("../fonts/DINProBold/DINPro-Bold.woff2") format("woff2"); }
 
 /*********************************************/
 /*MAIN STYLES*/
@@ -897,14 +897,14 @@ button {
     display: inline-block;
     margin-top: 4px;
     background-image: url(../img/sprite.png);
-    background-position: 0px -65px;
+    background-position: 0px -136px;
     width: 72px;
     height: 80px; }
   .bl_logo__word {
     display: inline-block;
     margin-left: 23px;
     background-image: url(../img/sprite.png);
-    background-position: 0px 0px;
+    background-position: -134px 0px;
     width: 108px;
     height: 60px; }
 
@@ -918,7 +918,7 @@ button {
     margin-left: 10px;
     display: inline-block;
     background-image: url(../img/sprite.png);
-    background-position: 0px -150px;
+    background-position: -247px -66px;
     width: 61px;
     height: 60px; }
   .bl_callBack__telephone {
@@ -994,7 +994,185 @@ button {
 .bl_offers {
   width: 100%;
   min-height: 636px;
-  background: url("../img/bg_underheader.jpg") no-repeat 50% 50%; }
+  background: url("../img/bg_underheader.jpg") no-repeat 50% 100%; }
+
+.bl_presentCompany {
+  position: relative;
+  top: 58px; }
+  .bl_presentCompany_name {
+    font-family: "D I N Pro", sans-serif;
+    font-size: 30px;
+    line-height: 40px;
+    color: #2b1f2b;
+    font-weight: 400; }
+    .bl_presentCompany_name__black {
+      font-family: "D I N ProBold", sans-serif;
+      color: #2b1f2b;
+      font-weight: 500; }
+    .bl_presentCompany_name__red {
+      font-family: "D I N ProBold", sans-serif;
+      color: #e02c33;
+      font-weight: 500; }
+
+.bl_presentServices {
+  margin-top: 54px;
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .bl_presentServices_icon__key {
+    display: inline-block;
+    background-image: url(../img/sprite.png);
+    background-position: 0px -273px;
+    width: 47px;
+    height: 49px; }
+  .bl_presentServices_icon__shield {
+    display: inline-block;
+    background-image: url(../img/sprite.png);
+    background-position: -374px -51px;
+    width: 42px;
+    height: 50px; }
+  .bl_presentServices_icon__clock {
+    display: inline-block;
+    background-image: url(../img/sprite.png);
+    background-position: -313px -113px;
+    width: 46px;
+    height: 52px; }
+  .bl_presentServices__title {
+    vertical-align: top;
+    color: #2b1f2b;
+    font-family: "D I N Pro", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 50px; }
+
+.bl_addServices {
+  margin-top: 31px;
+  width: 100%; }
+  .bl_addServices__paragraph {
+    width: 100%;
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px; }
+
+.bl_photo__computer {
+  width: 100%;
+  position: relative;
+  margin-left: 14%; }
+
+.bl_photo__wrapper {
+  height: 100%; }
+
+.bl_photo__img {
+  margin-top: 22%;
+  position: absolute;
+  z-index: 2; }
+
+.bl_contactUs__button {
+  margin-top: 49px;
+  width: 430px;
+  height: 61px;
+  border-radius: 30px;
+  background-color: #e02c33;
+  color: white;
+  font-family: "D I N Pro", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 60px;
+  text-transform: uppercase;
+  transition: all, 0.3s; }
+  .bl_contactUs__button:hover {
+    background-color: #ea2c0f;
+    transition: all, 0.3s; }
+
+.bl_advantages {
+  margin-top: 80px;
+  width: 100%; }
+  .bl_advantages__wrapper {
+    text-align: center;
+    margin: 0 auto;
+    width: 100%; }
+  .bl_advantages__title {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+    color: #2b1f2b;
+    font-family: "D I N Pro", sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 80px;
+    border-bottom: 2px solid #e02c33; }
+  .bl_advantages__allAdvantages {
+    margin-top: 39px; }
+  .bl_advantages__item {
+    margin-top: 30px;
+    width: 100%;
+    min-height: 131px;
+    background-color: #e8e8e8;
+    border-radius: 50px; }
+  .bl_advantages__backgroundForIcons {
+    float: left;
+    position: relative;
+    display: inline-block;
+    background-image: url(../img/sprite.png);
+    background-position: 0px 0px;
+    width: 129px;
+    height: 131px; }
+  .bl_advantages__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
+    .bl_advantages__icon-clock {
+      background-image: url(../img/sprite.png);
+      background-position: -313px -170px;
+      width: 46px;
+      height: 51px; }
+    .bl_advantages__icon-handsOnKeyboards {
+      background-image: url(../img/sprite.png);
+      background-position: -247px 0px;
+      width: 61px;
+      height: 61px; }
+    .bl_advantages__icon-speedometer {
+      background-image: url(../img/sprite.png);
+      background-position: -313px 0px;
+      width: 56px;
+      height: 48px; }
+    .bl_advantages__icon-hands {
+      background-image: url(../img/sprite.png);
+      background-position: -77px -136px;
+      width: 61px;
+      height: 64px; }
+  .bl_advantages__text {
+    position: relative;
+    left: 55px;
+    padding-right: 55px;
+    word-wrap: break-word;
+    color: #2b1f2b;
+    font-family: "D I N Pro", sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 400; }
+    .bl_advantages__text strong {
+      font-weight: 500; }
+
+.bl_decoration__bottomLine:after {
+  content: '';
+  position: absolute;
+  bottom: -34px;
+  left: calc(50% - 2px);
+  width: 2px;
+  height: 34px;
+  background-color: #e02c33; }
 
 /*********************************************/
 /*FOOTER*/

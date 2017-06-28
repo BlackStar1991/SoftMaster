@@ -11,8 +11,8 @@
 /*********************************************/
 
 $DIN: "D I N Pro", sans-serif;
-@include font-face("D I N Pro", "../fonts/DINPro/DINPro", 400, normal, eot ttf woff woff2);
-@include font-face("D I N ProBold", "../fonts/DINProBold/DINPro-Bold", 700, normal, eot ttf woff woff2);
+@include font-face("DIN Pro Regular", "../fonts/DINPro/DINPro", 400, normal, eot ttf woff woff2);
+@include font-face("DIN Pro Bold", "../fonts/DINProBold/DINPro-Bold", 700, normal, eot ttf woff woff2);
 
 /*********************************************/
 /*MAIN STYLES*/
@@ -351,9 +351,10 @@ button {
   }
 
 }
-.bl_deadline{
+.bl_deadline,
+.bl_costOfIntegration{
   margin-top: 60px;
-  width: 478px; ///////////////////
+  //width: 478px; ///////////////////
 
   &__head{
     position: relative;
@@ -362,6 +363,7 @@ button {
     border-radius: 36px;
     background-color: $color_raspberry;
     overflow: hidden;
+    z-index:1;
     
     &:after{
       content: '';
@@ -433,6 +435,142 @@ button {
   @include sprite($clock-white-icon);
 }
 
+.bl_costOfIntegration__main_icon-money{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  @include sprite($money-icon);
+}
+
+
+.bl_costOfIntegration__main_text{
+  margin-left: 30px;
+}
+
+// ABOUT COMPANY
+
+
+
+.bl_aboutCompany{
+  position: relative;
+  margin-top: 100px;
+  width: 100%;
+  min-height: 766px;
+  background: url("../img/bg_humansInRed.png") no-repeat 50% 100%;
+
+
+
+  &__absolute{
+    position: absolute;
+    margin-top: -7%;
+    left: calc(50% - ( 140px)) ; //////
+  }
+
+
+  &__wrapper{
+    position: relative;
+    text-align: center;
+    margin: -15% auto 0;
+    width: 100%;
+
+  }
+
+  &__title{
+    width: 280px; ///////////
+
+    display: inline-block;
+    padding-bottom: 10px;
+    color: $color_text;
+    font-family: $DIN;
+    font-size: 50px;
+    font-weight: 400;
+    border-bottom: 2px solid $color_red;
+  }
+
+
+
+
+  &__wrapperUnderText{
+    margin-top: 110px; /////////////////
+    min-height: 113px; //////////////////
+    width: 100%;
+    //background-color: #fff;
+  }
+  &__wrapperDecorSubstrate{
+
+    position: absolute;
+    left: -8%;    /////////////
+    width: 120%;
+    border-top: 4px solid $color_redBorderTop;
+    border-left: 4px solid $color_redBorderLeft;
+    border-bottom: 4px solid $color_redBorderBottom;
+    border-right: 4px solid $color_redBorderRight;
+
+    background-color: #fff;
+    box-sizing: border-box;
+  }
+  &__text{
+    padding: 5%;   ////////////////////
+    margin-left: 4%; /////////////////
+
+    font-family: $DIN;
+    font-size: 24px;
+    line-height: 30px;
+    color: $color_text;
+    font-weight: 400;
+
+    &_red{
+      color: $color_raspberry;
+      font-weight: 500;
+    }
+  }
+}
+
+.bl_softMaster{
+  margin-top: 24%;
+  color: #fff;
+  font-size: 24px;
+
+  &__title{
+    margin:0;
+    font-family:$DINBold;
+  }
+  &__text{
+    line-height: 30px;
+    font-family: $DIN;
+    margin-top: 15px; ////////////////
+
+    &:nth-of-type(1){
+      margin-top: 0;
+    }
+  }
+}
+
+
+.bl_webStars{
+  margin-left: 138px; ////////////
+  margin-top: 26%; /////////////
+  color: #fff;
+  font-size: 24px;
+
+
+  &__title{
+    margin:0;
+    font-family:$DINBold;
+  }
+  &__text{
+    line-height: 30px;
+    font-family: $DIN;
+    margin-top: 15px; ////////////////
+
+    &:nth-of-type(1){
+      margin-top: 0;
+    }
+  }
+}
+
+
 
 
 .bl_decoration{
@@ -450,20 +588,29 @@ button {
       background-color: $color_red;
     }
   }
-  &__middleLine{
+  &__leftLine{
 
     &:after{
-      content: '';
       position: absolute;
+      content: '';
+      left: -55%;
       top: 50%;
-      width: 47px;
+      width: 52px;
       height: 2px;
       background-color: $color_red;
+      z-index:2;
     }
   }
-
-
 }
+
+.bl_aboutCompany__title.bl_decoration__bottomLine{
+  &:after{
+
+    bottom: 10px;
+  }
+}
+
+
 /*********************************************/
 /*FOOTER*/
 /*********************************************/

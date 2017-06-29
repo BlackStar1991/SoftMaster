@@ -867,9 +867,146 @@ button {
 
   &__sliderBox{
     width: 100%;
+    margin-top: 36px; ///////////////
+
+
+
+//  SLIDER ARROWS
+
+  .slick-prev, .slick-arrow{
+    //background: none;
   }
+
+  .slick-prev:before{
+    content: "";
+    @include sprite($left-arrow-big);
+  }
+
+  }
+
+
+
+  &__item{
+
+  }
+  &__image{
+    margin-top: 15%;
+  }
+
 }
 
+
+.bl_contacts{
+  width: 100%;
+  min-height: 683px;
+  background: url("../img/bg_contacts.png") 50% 50% no-repeat;
+
+  margin-top: 112px; /////////////////////
+
+  color: #fff;
+
+  &__wrapper{
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+
+  }
+
+  &__title{
+    position: relative;
+    margin-top: 120px; ////////////////////
+    display: inline-block;
+    padding-bottom: 10px;
+    font-family: $DIN;
+    font-size: 30px; /////////
+    font-weight: 400;
+    line-height: 20px;
+    border-bottom: 2px solid white;
+  }
+
+
+  &__adress{
+    margin-top: 32px;
+
+
+    &_icon{
+      float: left;
+      @include sprite($pointer-icon);
+    }
+
+    &_text{
+      margin-left: 54px; ////////
+      font-family: $DIN;
+      font-size: 40px;
+      font-weight: 400;
+      line-height: 30px;
+    }
+  }
+
+  $marginLeftForBlocks: 16%;
+
+  &__office,
+  &__salesDepartment{
+    margin-top: 80px;
+
+    &_fullText{
+      position: relative;
+      margin-left: $marginLeftForBlocks; /////////////////////
+
+      &:before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -98px;
+        @include sprite($computer-icon);
+      }
+    }
+    &_text{
+      margin-top: 0;
+      margin-bottom: 5px;
+    }
+
+  }
+  &__partnerDepartment,
+  &__timeWork{
+    margin-top: 30px;   //////////////////////
+
+    &_fullText{
+      position: relative;
+      margin-left: $marginLeftForBlocks; /////////////////////
+
+      &:before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -98px;
+        @include sprite($cart-of-users-icon);
+      }
+    }
+    &_text{
+      margin-top: 0;
+      margin-bottom: 5px;
+    }
+  }
+
+
+  &__salesDepartment{
+      &:before{
+        @include sprite($tag-icon);
+      }
+    }
+  &__timeWork{
+    &:before{
+      @include sprite($calendar-icon);
+    }
+  }
+
+
+
+
+
+
+  }
 
 
 
@@ -892,6 +1029,19 @@ button {
       height: 34px;
       background-color: $color_red;
     }
+
+    &_white{
+      &:after{
+        content: '';
+        position: absolute;
+        bottom: -34px;
+        left: calc(50% - 2px );
+        width: 2px;
+        height: 34px;
+        background-color: white;
+      }
+    }
+
   }
   &__leftLine{
 
@@ -911,7 +1061,7 @@ button {
 .bl_aboutCompany__title.bl_decoration__bottomLine{
   &:after{
 
-    bottom: 10px;
+    bottom: -24px;
   }
 }
 

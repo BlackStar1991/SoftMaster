@@ -1590,7 +1590,95 @@ button {
     line-height: 80px;
     border-bottom: 2px solid #e02c33; }
   .bl_ourCustomers__sliderBox {
+    width: 100%;
+    margin-top: 36px; }
+    .bl_ourCustomers__sliderBox .slick-prev:before {
+      content: "";
+      background-image: url(../img/sprite.png);
+      background-position: -343px -226px;
+      width: 25px;
+      height: 38px; }
+  .bl_ourCustomers__image {
+    margin-top: 15%; }
+
+.bl_contacts {
+  width: 100%;
+  min-height: 683px;
+  background: url("../img/bg_contacts.png") 50% 50% no-repeat;
+  margin-top: 112px;
+  color: #fff; }
+  .bl_contacts__wrapper {
+    text-align: center;
+    margin: 0 auto;
     width: 100%; }
+  .bl_contacts__title {
+    position: relative;
+    margin-top: 120px;
+    display: inline-block;
+    padding-bottom: 10px;
+    font-family: "D I N Pro", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 20px;
+    border-bottom: 2px solid white; }
+  .bl_contacts__adress {
+    margin-top: 32px; }
+    .bl_contacts__adress_icon {
+      float: left;
+      background-image: url(../img/sprite.png);
+      background-position: -374px -239px;
+      width: 31px;
+      height: 41px; }
+    .bl_contacts__adress_text {
+      margin-left: 54px;
+      font-family: "D I N Pro", sans-serif;
+      font-size: 40px;
+      font-weight: 400;
+      line-height: 30px; }
+  .bl_contacts__office, .bl_contacts__salesDepartment {
+    margin-top: 80px; }
+    .bl_contacts__office_fullText, .bl_contacts__salesDepartment_fullText {
+      position: relative;
+      margin-left: 16%; }
+      .bl_contacts__office_fullText:before, .bl_contacts__salesDepartment_fullText:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -98px;
+        background-image: url(../img/sprite.png);
+        background-position: -374px -151px;
+        width: 46px;
+        height: 40px; }
+    .bl_contacts__office_text, .bl_contacts__salesDepartment_text {
+      margin-top: 0;
+      margin-bottom: 5px; }
+  .bl_contacts__partnerDepartment, .bl_contacts__timeWork {
+    margin-top: 30px; }
+    .bl_contacts__partnerDepartment_fullText, .bl_contacts__timeWork_fullText {
+      position: relative;
+      margin-left: 16%; }
+      .bl_contacts__partnerDepartment_fullText:before, .bl_contacts__timeWork_fullText:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -98px;
+        background-image: url(../img/sprite.png);
+        background-position: -374px -106px;
+        width: 46px;
+        height: 40px; }
+    .bl_contacts__partnerDepartment_text, .bl_contacts__timeWork_text {
+      margin-top: 0;
+      margin-bottom: 5px; }
+  .bl_contacts__salesDepartment:before {
+    background-image: url(../img/sprite.png);
+    background-position: -374px 0px;
+    width: 46px;
+    height: 46px; }
+  .bl_contacts__timeWork:before {
+    background-image: url(../img/sprite.png);
+    background-position: -374px -196px;
+    width: 46px;
+    height: 38px; }
 
 .bl_decoration__bottomLine:after {
   content: '';
@@ -1600,6 +1688,15 @@ button {
   width: 2px;
   height: 34px;
   background-color: #e02c33; }
+
+.bl_decoration__bottomLine_white:after {
+  content: '';
+  position: absolute;
+  bottom: -34px;
+  left: calc(50% - 2px);
+  width: 2px;
+  height: 34px;
+  background-color: white; }
 
 .bl_decoration__leftLine:after {
   position: absolute;
@@ -1612,7 +1709,7 @@ button {
   z-index: 2; }
 
 .bl_aboutCompany__title.bl_decoration__bottomLine:after {
-  bottom: 10px; }
+  bottom: -24px; }
 
 /*********************************************/
 /*FOOTER*/

@@ -3,7 +3,32 @@ $(document).ready(function () {
     console.log("OK");
 
 
+    // SLIDER
 
+    function slider() {
+       var boxWhithSlides = $(".bl_ourCustomers__sliderBox");
+
+        boxWhithSlides.slick(
+            {
+                adaptiveHeight:true,
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                centerPadding: '10px',
+                responsive: [
+                    {
+                        breakpoint: 1200,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+
+            }
+        );
+
+
+    }slider();
 
 
 

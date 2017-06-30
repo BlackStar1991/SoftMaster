@@ -27,28 +27,28 @@
 
     display: block;
 
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 39px;
     padding: 0;
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
     transform: translate(0, -50%);
 
     cursor: pointer;
-
-    color: transparent;
     border: none;
     outline: none;
     background: transparent;
+    z-index: 100;
 }
 .slick-prev:hover,
 .slick-prev:focus,
 .slick-next:hover,
 .slick-next:focus
 {
-    color: transparent;
+    /*color: transparent;*/
     outline: none;
-    background: transparent;
+    /*background: transparent;*/
+  
 }
 .slick-prev:hover:before,
 .slick-prev:focus:before,
@@ -69,48 +69,78 @@
     font-family: 'slick';
     font-size: 20px;
     line-height: 1;
-
-    opacity: .75;
-    color: white;
-
+    width: 25px;
+    height: 39px;
+     /*border: 1px solid red;*/
+    opacity: 1;
+    /*color: white;*/
+    /*color: #f00;*/
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
 .slick-prev
 {
-    left: -25px;
+    left: -45px;
 }
 [dir='rtl'] .slick-prev
 {
-    right: -25px;
+    right: 20px;
     left: auto;
 }
 .slick-prev:before
 {
-    content: '←';
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 25px;
+    height: 39px;
+    background: url("../../../img/sprite.png") 343px 226px no-repeat;
+    z-index:100;
 }
 [dir='rtl'] .slick-prev:before
 {
-    content: '→';
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 25px;
+    height: 39px;
+    background: url("../../../img/sprite.png") 343px 226px no-repeat;
+    z-index:100;
 }
 
 .slick-next
 {
-    right: -25px;
+    right: -50px;
 }
 [dir='rtl'] .slick-next
 {
     right: auto;
-    left: -25px;
+    /*left: -25px;*/
 }
 .slick-next:before
 {
-    content: '→';
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 25px;
+    height: 39px;
+    background: url("../../../img/sprite.png") -313px -226px no-repeat;
+    z-index:100;
 }
 [dir='rtl'] .slick-next:before
 {
-    content: '←';
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 25px;
+    height: 39px;
+    background: url("../../../img/sprite.png") -313px -226px no-repeat;
+    z-index:100;
 }
 
 /* Dots */

@@ -63,13 +63,13 @@
                         <nav class="bl_mainNavigation">
                             <ul class="bl_mainNavigation__fullGroup">
                                 <li class="bl_mainNavigation__item"><a class="bl_mainNavigation__link"
-                                                                       href="#">О компании</a></li>
+                                                                       href="#aboutCompany">О компании</a></li>
                                 <li class="bl_mainNavigation__item"><a class="bl_mainNavigation__link"
-                                                                       href="#">Отзывы</a></li>
-                                <li class="bl_mainNavigation__item"><a class="bl_mainNavigation__link" href="#">Цены</a>
+                                                                       href="#reviews">Отзывы</a></li>
+                                <li class="bl_mainNavigation__item"><a class="bl_mainNavigation__link" href="#cost">Цены</a>
                                 </li>
                                 <li class="bl_mainNavigation__item"><a class="bl_mainNavigation__link"
-                                                                       href="#">Контакты</a></li>
+                                                                       href="#contacts">Контакты</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -186,7 +186,7 @@
                 </div>
             </div>
         </section>
-        <section class="bl_cost">
+        <section id="cost" class="bl_cost">
             <div class="bl_cost__wrapper">
                 <h2 align="center" class="bl_cost__title bl_decoration__bottomLine">Сроки исполнения и стоимость</h2>
             </div>
@@ -224,7 +224,7 @@
                 </div>
             </div>
         </section>
-        <section class="bl_aboutCompany">
+        <section id="aboutCompany" class="bl_aboutCompany">
 
             <div class="bl_aboutCompany__wrapper">
                 <div class="bl_aboutCompany__absolute">
@@ -434,7 +434,7 @@
             </div>
         </section>
 
-        <section class="bl_contacts">
+        <section id="contacts" class="bl_contacts">
             <div class="bl_contacts__wrapper">
                 <h2 align="center" class="bl_contacts__title bl_decoration__bottomLine_white">Контакты</h2>
             </div>
@@ -492,24 +492,67 @@
         </section>
         <section class="bl_questions">
             <div class="bl_questions__block">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <span class="bl_questions__text">Остались вопросы?</span>
-                        </div>
+                <span class="bl_questions__text">Остались вопросы?</span>
+            </div>
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-xs-12">
+                        <form class="bl_questions_callback" action="">
+                            <div class="bl_questions__textBlock">
+                                <p class="bl_questions__textBlock_text__red">Оставьте свою почту</p>
+                                <p class="bl_questions__textBlock_text">и с Вами свяжется наш специалист</p>
+                            </div>
+
+                            <input class="bl_questions_callback__email" type="email" placeholder="Введите Ваш E-mail">
+                            <input class="bl_questions_callback__submit" type="submit" value="Отправить запрос">
+
+                        </form>
                     </div>
+
+
                 </div>
             </div>
         </section>
-
-
     </div>
 </main>
 <!------------------------------------------ FOOTER ----------------------------------------------------------->
 <footer class="footer">
     <!-- Code -->
     <div class="mainWrapper">
-
+        <div class="bl_navigation">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="bl_logo">
+                            <div class="bl_logo__icon"></div>
+                            <div class="bl_logo__word"></div>
+                        </div>
+                        <div class="bl_callBack">
+                            <div class="bl_callBack__icon"></div>
+                            <div class="bl_callBack__telephone">
+                                <p class="bl_callBack__telNumber">(044)-485-11-66</p>
+                                <button class="bl_callBack__button">Обратный звонок</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <nav class="bl_mainNavigation">
+                            <ul class="bl_mainNavigation__fullGroup">
+                                <li class="bl_mainNavigation__item"><a class="bl_mainNavigation__link"
+                                                                       href="#aboutCompany">О компании</a></li>
+                                <li class="bl_mainNavigation__item"><a class="bl_mainNavigation__link"
+                                                                       href="#reviews">Отзывы</a></li>
+                                <li class="bl_mainNavigation__item"><a class="bl_mainNavigation__link" href="#cost">Цены</a>
+                                </li>
+                                <li class="bl_mainNavigation__item"><a class="bl_mainNavigation__link"
+                                                                       href="#contacts">Контакты</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </footer>
 

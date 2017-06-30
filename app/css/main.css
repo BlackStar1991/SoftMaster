@@ -1386,8 +1386,7 @@ button {
     position: relative;
     box-sizing: border-box;
     width: 100%;
-    min-height: 492px;
-    border: 1px solid green; }
+    min-height: 492px; }
   .bl_fullTechnologies__user, .bl_fullTechnologies__truck, .bl_fullTechnologies__cart, .bl_fullTechnologies__cube, .bl_fullTechnologies__oneC {
     display: inline-block; }
     .bl_fullTechnologies__user_text, .bl_fullTechnologies__truck_text, .bl_fullTechnologies__cart_text, .bl_fullTechnologies__cube_text, .bl_fullTechnologies__oneC_text {
@@ -1700,21 +1699,114 @@ button {
 .bl_questions__block {
   position: relative;
   width: 100%;
-  height: 95px;
+  height: 100%;
   background-color: #e02e35;
+  overflow: hidden;
   z-index: 1; }
   .bl_questions__block:before {
     content: '';
-    background-color: #fff; }
+    position: absolute;
+    left: -6%;
+    bottom: -110%;
+    background-color: #fff;
+    width: 30%;
+    height: 100%;
+    -webkit-transform: rotate(33deg);
+        -ms-transform: rotate(33deg);
+            transform: rotate(33deg); }
   .bl_questions__block:after {
     content: '';
-    background-color: #89171a; }
+    background-color: #89171a;
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+    width: 100%;
+    height: 30%;
+    -webkit-transform: rotate(-1deg) translate(0%, 52%);
+        -ms-transform: rotate(-1deg) translate(0%, 52%);
+            transform: rotate(-1deg) translate(0%, 52%);
+    z-index: 2; }
 
 .bl_questions__text {
+  padding-left: 15%;
   color: #fff;
   font-family: "D I N Pro", sans-serif;
   font-size: 50px;
   line-height: 2; }
+
+.bl_questions_callback {
+  display: block;
+  width: 100%;
+  margin-top: 8%; }
+  .bl_questions_callback__email {
+    display: inline-block;
+    margin-left: 88px;
+    padding: 20px 60px;
+    border-radius: 30px;
+    height: 61px;
+    outline: none;
+    background-color: white;
+    border: 2px solid #e02c33; }
+    .bl_questions_callback__email::-webkit-input-placeholder {
+      text-align: center;
+      color: darkgrey;
+      font-family: "D I N Pro", sans-serif;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 60px; }
+    .bl_questions_callback__email::-moz-placeholder {
+      text-align: center;
+      color: darkgrey;
+      font-family: "D I N Pro", sans-serif;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 60px; }
+    .bl_questions_callback__email:-ms-input-placeholder {
+      text-align: center;
+      color: darkgrey;
+      font-family: "D I N Pro", sans-serif;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 60px; }
+    .bl_questions_callback__email::placeholder {
+      text-align: center;
+      color: darkgrey;
+      font-family: "D I N Pro", sans-serif;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 60px; }
+  .bl_questions_callback__submit {
+    padding: 0 36px;
+    display: inline-block;
+    margin-left: 5%;
+    height: 61px;
+    border-radius: 30px;
+    background-color: #e02c33;
+    color: white;
+    font-family: "D I N Pro", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 60px;
+    outline: none;
+    border-color: transparent;
+    text-transform: uppercase;
+    transition: all, 0.3s; }
+    .bl_questions_callback__submit:hover {
+      background-color: #ea2c0f;
+      transition: all, 0.3s; }
+
+.bl_questions__textBlock {
+  display: inline-block;
+  float: left;
+  width: 246px;
+  font-family: "D I N Pro", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px; }
+  .bl_questions__textBlock_text {
+    color: #2b1f2b; }
+    .bl_questions__textBlock_text__red {
+      color: #e02e35; }
 
 .bl_decoration__bottomLine:after {
   content: '';
@@ -1750,6 +1842,11 @@ button {
 /*********************************************/
 /*FOOTER*/
 /*********************************************/
+.footer {
+  margin-top: 103px; }
+  .footer .bl_navigation {
+    background-color: #e8e8e8; }
+
 /*********************************************/
 /*@IMPORT MEDIA*/
 /*********************************************/

@@ -584,7 +584,7 @@ button {
     box-sizing: border-box;
     width: 100%;
     min-height: 492px;
-    border: 1px solid green;
+    //border: 1px solid green;
   }
 
   &__user,
@@ -988,18 +988,32 @@ $mapHeight: 448px;
   &__block{
     position: relative;
     width: 100%;
-    height: 95px;
+    height: 100%;
     background-color: $color_raspberry;
-    //overflow: hidden;
+    overflow: hidden;
     z-index: 1;
 
     &:before{
       content: '';
+      position: absolute;
+      left: -6%;
+      bottom: -110%;
       background-color: #fff;
+      width: 30%;
+      height: 100%;
+      transform: rotate(33deg);
+
     }
     &:after{
       content: '';
       background-color: #89171a;
+      position: absolute;
+      bottom: 0;
+      left: 15%;
+      width: 100%;
+      height: 30%;
+      transform: rotate(-1deg) translate(0%, 52%);
+      z-index: 2;
     }
 
 
@@ -1007,12 +1021,85 @@ $mapHeight: 448px;
   }
 
   &__text{
-
+    padding-left: 15%; //////////////
     color: #fff;
     font-family: $DIN;
     font-size: 50px;
     line-height: 2;
   }
+
+
+  &_callback{
+    display: block;
+    width: 100%;
+    margin-top: 8%; //////////////
+
+    &__email{
+
+      display: inline-block;
+      margin-left: 88px; ////////////////
+      padding: 20px 60px;
+      border-radius: 30px;
+      height: 61px;
+      outline: none;
+      background-color: white;
+      border: 2px solid $color_red;
+
+      &::placeholder{
+        text-align: center;
+        color: darkgrey;
+        font-family: $DIN;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 60px;
+      }
+    }
+
+    &__submit{
+      padding: 0 36px; //////////////
+      display: inline-block;
+      margin-left: 5%; //////////////
+      height: 61px;
+      border-radius: 30px;
+      background-color: $color_red;
+      color: white;
+      font-family: $DIN;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 60px;
+      outline: none;
+      border-color: transparent;
+      text-transform: uppercase;
+      transition: all, 0.3s;
+
+      &:hover{
+        background-color: $color_darkRaspberry;
+        transition: all, 0.3s;
+      }
+    }
+
+
+  }
+
+
+ &__textBlock{
+   display: inline-block;
+   float: left;
+   width: 246px;       ///////////////
+   font-family: $DIN;
+   font-size: 24px;
+   font-weight: 500;
+   line-height: 30px;
+
+   &_text{
+     color: $color_text;
+
+     &__red{
+       color: $color_raspberry;
+     }
+   }
+
+ }
 
 }
 

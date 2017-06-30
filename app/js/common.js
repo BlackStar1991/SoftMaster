@@ -1,6 +1,5 @@
 $(document).ready(function () {
 
-    console.log("OK");
 
 
     // SLIDER
@@ -26,9 +25,14 @@ $(document).ready(function () {
 
             }
         );
-
-
     }slider();
+
+
+    //MAP OVERLAY
+
+    $(".bl_map__overlayMap").click(function() {
+        $(this).remove();
+    });
 
 
 

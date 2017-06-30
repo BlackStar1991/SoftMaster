@@ -26,8 +26,6 @@ body {
   position: relative;
 }
 
-
-
 .mainWrapper {
   position: relative;
   width: 100%;
@@ -77,7 +75,6 @@ button {
   margin: 0;
 }
 
-
 /*********************************************/
 /*TYPOGRAPHY*/
 /*********************************************/
@@ -85,8 +82,6 @@ button {
 /*********************************************/
 /*STICKY FOOTER*/
 /*********************************************/
-
-
 
 /*********************************************/
 /*HEADER*/
@@ -98,7 +93,7 @@ button {
 /*SECTIONS*/
 /*********************************************/
 
-.mainWrapper{
+.mainWrapper {
   position: relative;
   width: 100%;
   min-width: 320px;
@@ -108,34 +103,29 @@ button {
   overflow: hidden;
 }
 
-
-.bl_offers{
+.bl_offers {
   width: 100%;
-  min-height:636px;
+  min-height: 636px;
   background: url("../img/bg_underheader.jpg") no-repeat 50% 100%;
 }
 
-
-
-
-.bl_presentCompany{
+.bl_presentCompany {
   position: relative;
   top: 58px; //////////////////////
 
-
-  &_name{
+  &_name {
 
     font-family: $DIN;
-    font-size: 30px;  //////// 47px
+    font-size: 30px; //////// 47px
     line-height: 40px;
     color: $color_text;
     font-weight: 400;
-    &__black{
+    &__black {
       font-family: $DINBold;
       color: $color_text;
       font-weight: 500;
     }
-    &__red{
+    &__red {
       font-family: $DINBold;
       color: $color_red;
       font-weight: 500;
@@ -143,30 +133,30 @@ button {
   }
 }
 
-.bl_presentServices{
+.bl_presentServices {
   margin-top: 54px; /////////////
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 
-  &_icon{
+  &_icon {
 
-    &__key{
+    &__key {
       display: inline-block;
       @include sprite($key-icon);
     }
-    &__shield{
+    &__shield {
       display: inline-block;
       @include sprite($shield-icon);
     }
-    &__clock{
+    &__clock {
       display: inline-block;
       @include sprite($clock-icon);
     }
   }
 
-  &__title{
+  &__title {
     vertical-align: top;
     color: $color_text;
     font-family: $DIN;
@@ -177,13 +167,12 @@ button {
 
 }
 
-.bl_addServices{
+.bl_addServices {
 
   margin-top: 31px; ////////////////////
   width: 100%;
 
-
-  &__paragraph{
+  &__paragraph {
     width: 100%;
     margin-top: 30px; /////
 
@@ -193,30 +182,28 @@ button {
   }
 }
 
-.bl_photo{
-  &__computer{
+.bl_photo {
+  &__computer {
 
     width: 100%;
     position: relative;
     margin-left: 14%;
   }
-  &__wrapper{
+  &__wrapper {
 
     height: 100%;
 
   }
 
-
-  &__img{
+  &__img {
 
     margin-top: 22%;
     position: absolute;
-    z-index:2;
+    z-index: 2;
   }
 }
 
-
-.bl_contactUs__button{
+.bl_contactUs__button {
   margin-top: 49px; //////////////
 
   width: 430px;
@@ -231,24 +218,24 @@ button {
   text-transform: uppercase;
   transition: all, 0.3s;
 
-  &:hover{
+  &:hover {
     background-color: $color_darkRaspberry;
     transition: all, 0.3s;
   }
 }
 
-.bl_advantages{
+.bl_advantages {
   margin-top: 80px; ///////////
   width: 100%;
 
-  &__wrapper{
+  &__wrapper {
     text-align: center;
     margin: 0 auto;
     width: 100%;
 
   }
 
-  &__title{
+  &__title {
     position: relative;
     display: inline-block;
     padding-bottom: 10px;
@@ -260,47 +247,47 @@ button {
     border-bottom: 2px solid $color_red;
   }
 
-  &__allAdvantages{
+  &__allAdvantages {
     margin-top: 39px;
   }
-  &__item{
+  &__item {
     margin-top: 30px;
     width: 100%;
-    min-height:131px;
+    min-height: 131px;
     background-color: $color_grey;
     border-radius: 50px;
   }
 
-  &__backgroundForIcons{
+  &__backgroundForIcons {
     float: left;
     position: relative;
     display: inline-block;
     @include sprite($background-for-icons);
   }
-//  ICONS
+  //  ICONS
 
-  &__icon{
+  &__icon {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    &-clock{
+    &-clock {
       @include sprite($clock-white-icon);
     }
-    &-handsOnKeyboards{
+    &-handsOnKeyboards {
       @include sprite($hands-on-keyboards-icon);
     }
-    &-speedometer{
+    &-speedometer {
       @include sprite($speedometer-icon);
     }
-    &-hands{
+    &-hands {
       @include sprite($hands-icon);
     }
 
   }
-//  ICONS END
+  //  ICONS END
 
-  &__text{
+  &__text {
 
     position: relative;
     float: left;
@@ -315,7 +302,7 @@ button {
     line-height: 30px;
     font-weight: 400;
 
-    strong{
+    strong {
       font-weight: 500;
     }
 
@@ -323,21 +310,21 @@ button {
 
 }
 
-.bl_cost{
+.bl_cost {
   margin-top: 68px; //////////////////////
 
   width: 100%;
   min-height: 902px;
   background: url("../img/bg_table.png") no-repeat 50% 100%;
 
-  &__wrapper{
+  &__wrapper {
     text-align: center;
     margin: 0 auto;
     width: 100%;
 
   }
 
-  &__title{
+  &__title {
 
     margin-top: 135px; //////////////////
 
@@ -353,21 +340,22 @@ button {
   }
 
 }
+
 .bl_deadline,
-.bl_costOfIntegration{
+.bl_costOfIntegration {
   margin-top: 60px;
   //width: 478px; ///////////////////
 
-  &__head{
+  &__head {
     position: relative;
     height: 79px;
     width: 100%;
     border-radius: 36px;
     background-color: $color_raspberry;
     overflow: hidden;
-    z-index:1;
-    
-    &:after{
+    z-index: 1;
+
+    &:after {
       content: '';
       position: absolute;
       bottom: -10%;
@@ -375,11 +363,10 @@ button {
       height: 50%;
       transform: rotate(-6deg) translate(2%, 44%);
       background-color: #89171a;
-      z-index:2;
+      z-index: 2;
     }
 
-
-    &_text{
+    &_text {
       padding-top: 20px;
       margin-left: 40px;
       color: white;
@@ -389,21 +376,21 @@ button {
       line-height: 30px;
     }
 
-    &_uppercase{
+    &_uppercase {
       text-transform: uppercase;
     }
   }
 
-  &__main{
+  &__main {
     position: relative;
     margin-top: -30px;
     width: 100%;
     box-sizing: border-box;
-    min-height:219px;
+    min-height: 219px;
     background-color: #fff;
     border: 2px solid $color_red;
 
-    &_icon{
+    &_icon {
       position: relative;
       display: inline-block;
       margin-top: 68px;
@@ -415,8 +402,7 @@ button {
 
     }
 
-
-    &_text{
+    &_text {
       display: inline-block;
       margin-top: 96px;
       margin-left: 56px;
@@ -429,7 +415,8 @@ button {
     }
   }
 }
-.bl_deadline__main_icon-clock{
+
+.bl_deadline__main_icon-clock {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -437,7 +424,7 @@ button {
   @include sprite($clock-white-icon);
 }
 
-.bl_costOfIntegration__main_icon-money{
+.bl_costOfIntegration__main_icon-money {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -445,30 +432,26 @@ button {
   @include sprite($money-icon);
 }
 
-
-.bl_costOfIntegration__main_text{
+.bl_costOfIntegration__main_text {
   margin-left: 30px;
 }
 
 // ABOUT COMPANY
 
-.bl_aboutCompany{
+.bl_aboutCompany {
   position: relative;
   margin-top: 100px;
   width: 100%;
   min-height: 766px;
   background: url("../img/bg_humansInRed.png") no-repeat 50% 100%;
 
-
-
-  &__absolute{
+  &__absolute {
     position: absolute;
     margin-top: -7%;
-    left: calc(50% - ( 140px)) ; //////
+    left: calc(50% - (140px)); //////
   }
 
-
-  &__wrapper{
+  &__wrapper {
     position: relative;
     text-align: center;
     margin: -15% auto 0;
@@ -476,7 +459,7 @@ button {
 
   }
 
-  &__title{
+  &__title {
     width: 280px; ///////////
 
     display: inline-block;
@@ -488,19 +471,16 @@ button {
     border-bottom: 2px solid $color_red;
   }
 
-
-
-
-  &__wrapperUnderText{
+  &__wrapperUnderText {
     margin-top: 110px; /////////////////
     min-height: 113px; //////////////////
     width: 100%;
     //background-color: #fff;
   }
-  &__wrapperDecorSubstrate{
+  &__wrapperDecorSubstrate {
 
     position: absolute;
-    left: -8%;    /////////////
+    left: -8%; /////////////
     width: 120%;
     border-top: 4px solid $color_redBorderTop;
     border-left: 4px solid $color_redBorderLeft;
@@ -510,8 +490,8 @@ button {
     background-color: #fff;
     box-sizing: border-box;
   }
-  &__text{
-    padding: 5%;   ////////////////////
+  &__text {
+    padding: 5%; ////////////////////
     margin-left: 4%; /////////////////
 
     font-family: $DIN;
@@ -520,72 +500,69 @@ button {
     color: $color_text;
     font-weight: 400;
 
-    &_red{
+    &_red {
       color: $color_raspberry;
       font-weight: 500;
     }
   }
 }
 
-.bl_softMaster{
+.bl_softMaster {
   margin-top: 24%;
   color: #fff;
   font-size: 24px;
 
-  &__title{
-    margin:0;
-    font-family:$DINBold;
+  &__title {
+    margin: 0;
+    font-family: $DINBold;
   }
-  &__text{
+  &__text {
     line-height: 30px;
     font-family: $DIN;
     margin-top: 15px; ////////////////
 
-    &:nth-of-type(1){
+    &:nth-of-type(1) {
       margin-top: 0;
     }
   }
 }
 
-
-.bl_webStars{
+.bl_webStars {
   margin-left: 138px; ////////////
   margin-top: 26%; /////////////
   color: #fff;
   font-size: 24px;
 
-
-  &__title{
-    margin:0;
-    font-family:$DINBold;
+  &__title {
+    margin: 0;
+    font-family: $DINBold;
   }
-  &__text{
+  &__text {
     line-height: 30px;
     font-family: $DIN;
     margin-top: 15px; ////////////////
 
-    &:nth-of-type(1){
+    &:nth-of-type(1) {
       margin-top: 0;
     }
   }
 }
 
-
 ///////////////////////
 
-.bl_technology{
+.bl_technology {
   margin-top: 1%; ///////////////////////
 
   width: 100%;
 
-  &__wrapper{
+  &__wrapper {
     text-align: center;
     margin: 0 auto;
     width: 100%;
 
   }
 
-  &__title{
+  &__title {
     position: relative;
     display: inline-block;
     padding-bottom: 10px;
@@ -597,30 +574,28 @@ button {
     border-bottom: 2px solid $color_red;
   }
 }
-.bl_fullTechnologies{
+
+.bl_fullTechnologies {
   position: relative;
   width: 100%;
 
-
-
-  &__diagram{
+  &__diagram {
     position: relative;
     box-sizing: border-box;
     width: 100%;
-    min-height:492px;
+    min-height: 492px;
     border: 1px solid green;
   }
-
 
   &__user,
   &__truck,
   &__cart,
   &__cube,
-  &__oneC{
+  &__oneC {
     display: inline-block;
     //border: 1px solid red;
 
-    &_text{
+    &_text {
       text-align: center;
       color: darkgrey;
       font-family: $DIN;
@@ -630,46 +605,42 @@ button {
     }
   }
 
-
-
-
   ////// Correct cart cube oneC
-  &__cart{
+  &__cart {
     margin-top: 11%; ///////////////////////////
     margin-left: 8%; /////////////////////////////
 
-    &_text{
+    &_text {
       margin-left: -37%;
     }
   }
 
-  &__cube{
+  &__cube {
     margin-top: 11%;
     margin-right: 8%;
   }
 
-  &__oneC{
+  &__oneC {
     display: block;
     text-align: center;
     clear: both;
     margin: 0 auto;
   }
 
-
-////////////// BOXES WITH ARROWS
+  ////////////// BOXES WITH ARROWS
   &__arrowsBoxOne,
-  &__arrowsBoxThree{
+  &__arrowsBoxThree {
     position: absolute;
-    top: 30%;            //////////////
-    left: 8vw;        ////////////////
-    width: 78px;         //////////
+    top: 30%; //////////////
+    left: 8vw; ////////////////
+    width: 78px; //////////
     height: 78px;
     //border: 1px solid #f0f;
 
-    &_arrowTopLeft{
+    &_arrowTopLeft {
       @include sprite($left-top-arrow-icon);
     }
-    &_lineTopRight{
+    &_lineTopRight {
       transform: rotate(45deg);
       margin-top: 22%;
       margin-left: 2%;
@@ -677,7 +648,7 @@ button {
       height: 2px;
       background-color: $color_raspberry;
     }
-    &_arrowBottomRight{
+    &_arrowBottomRight {
       position: absolute;
       bottom: 0;
       right: 0;
@@ -685,13 +656,8 @@ button {
     }
   }
 
-
-
-
-
-
   &__arrowsBoxTwo,
-  &__arrowsBoxFour{
+  &__arrowsBoxFour {
     position: absolute;
     top: 31%; /////////////////////
     right: 8vw;
@@ -699,14 +665,14 @@ button {
     height: 70px;
     //border: 1px solid #f0f;
 
-    &_arrowTopleft{
+    &_arrowTopleft {
       position: absolute;
       top: -54%;
       right: 0;
       @include sprite($right-top-arrow-icon);
     }
 
-    &_lineTopLeft{
+    &_lineTopLeft {
       transform: rotate(-45deg);
       margin-top: 50%;
       margin-right: 2%;
@@ -717,32 +683,31 @@ button {
   }
 
   $topArrow: 61%;
-/// correct arrowsBoxThree
-  &__arrowsBoxThree{
+  /// correct arrowsBoxThree
+  &__arrowsBoxThree {
     top: $topArrow;
     left: 23vw;
   }
-  &__arrowsBoxFour{
+  &__arrowsBoxFour {
     top: $topArrow;
     right: 23vw;
   }
 
-
-//////////////////////////
-  &__fullLine{
+  //////////////////////////
+  &__fullLine {
     display: inline-block;
     //border: 1px solid yellow;
     margin-left: 40px; /////////////////////////
     //margin-right: 45px; //////////////////////
     margin-top: 58px; ////////////
     height: 23px;
-    width:47vw;
+    width: 47vw;
   }
-  &__arrow{
+  &__arrow {
     display: inline-block;
     @include sprite($left-arrow-icon);
   }
-  &__dushLine{
+  &__dushLine {
     display: inline-block;
     height: 24px;
     width: 45vw; /////////////////////////////
@@ -751,11 +716,8 @@ button {
 
   }
 
-
-
-
-///////// ICON
-  &__backgroundForIcons{
+  ///////// ICON
+  &__backgroundForIcons {
     position: relative;
     display: inline-block;
     @include sprite($background-for-icons);
@@ -766,31 +728,31 @@ button {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index:3;
+    z-index: 3;
     &-user {
       @include sprite($user-icon);
     }
-    &-truck{
+    &-truck {
       @include sprite($truck-icon);
     }
-    &-cart{
+    &-cart {
       @include sprite($cart-icon);
     }
-    &-cube{
+    &-cube {
       @include sprite($cube-icon);
     }
-    &-oneC{
+    &-oneC {
       @include sprite($-one-c-icon);
     }
   }
 
 }
 
-.bl_goodMethod{
+.bl_goodMethod {
   width: 100%;
   margin-top: 73px; ////////////////
 
-  &__likeTitle{
+  &__likeTitle {
     position: relative;
     display: inline-block;
     width: 100%;
@@ -805,27 +767,27 @@ button {
     font-weight: 400;
     line-height: 72px;
     text-transform: uppercase;
-    z-index:2;
+    z-index: 2;
   }
 
   $correctTop: 30px;
-  &__advantages{
+  &__advantages {
     position: relative;
     width: 100%;
     top: $correctTop * (-1);
-    min-height:405px;
+    min-height: 405px;
     background-color: $color_grey;
   }
 
-  &__item{
+  &__item {
     position: relative;
     width: 100%;
     border-bottom: 2px solid $color_raspberry;
-    &:nth-of-type(1){
-      padding-top:$correctTop;
+    &:nth-of-type(1) {
+      padding-top: $correctTop;
     }
   }
-  &__text{
+  &__text {
     width: 100%;
     padding: 20px 0 20px 5%;
     color: $color_text;
@@ -833,7 +795,7 @@ button {
     font-size: 24px;
     font-weight: 400;
 
-    &:before{
+    &:before {
       position: absolute;
       left: 2%;
       content: '';
@@ -842,18 +804,18 @@ button {
   }
 }
 
-.bl_ourCustomers{
+.bl_ourCustomers {
   width: 100%;
   margin-top: 91px; /////////////////////
 
-  &__wrapper{
+  &__wrapper {
     text-align: center;
     margin: 0 auto;
     width: 100%;
 
   }
 
-  &__title{
+  &__title {
     position: relative;
     display: inline-block;
     padding-bottom: 10px;
@@ -865,76 +827,70 @@ button {
     border-bottom: 2px solid $color_red;
   }
 
-  &__sliderBox{
+  &__sliderBox {
     width: 100%;
     margin-top: 36px; ///////////////
 
+    //  SLIDER ARROWS
 
+    .slick-prev, .slick-arrow {
+      //background: none;
+    }
 
-//  SLIDER ARROWS
-
-  .slick-prev, .slick-arrow{
-    //background: none;
-  }
-
-  .slick-prev:before{
-    content: "";
-    @include sprite($left-arrow-big);
-  }
+    .slick-prev:before {
+      content: "";
+      @include sprite($left-arrow-big);
+    }
 
   }
 
-
-
-  &__item{
+  &__item {
 
   }
-  &__image{
+  &__image {
     margin-top: 15%;
   }
 
 }
 
-
-.bl_contacts{
+.bl_contacts {
   width: 100%;
   min-height: 683px;
-  background: url("../img/bg_contacts.png") 50% 50% no-repeat;
+  background: url("../img/bg_contacts.png") 50% 0% no-repeat;
 
   margin-top: 112px; /////////////////////
 
   color: #fff;
 
-  &__wrapper{
+  &__wrapper {
     text-align: center;
     margin: 0 auto;
     width: 100%;
 
   }
 
-  &__title{
+  &__title {
     position: relative;
     margin-top: 120px; ////////////////////
     display: inline-block;
     padding-bottom: 10px;
     font-family: $DIN;
-    font-size: 30px; /////////
+    font-size: 50px; /////////
     font-weight: 400;
     line-height: 20px;
     border-bottom: 2px solid white;
   }
 
-
-  &__adress{
+  &__adress {
     margin-top: 32px;
 
-
-    &_icon{
+    &_icon {
       float: left;
       @include sprite($pointer-icon);
     }
 
-    &_text{
+    &_text {
+      margin-top: 74px; //////
       margin-left: 54px; ////////
       font-family: $DIN;
       font-size: 40px;
@@ -946,14 +902,14 @@ button {
   $marginLeftForBlocks: 16%;
 
   &__office,
-  &__salesDepartment{
+  &__salesDepartment {
     margin-top: 80px;
 
-    &_fullText{
+    &_fullText {
       position: relative;
       margin-left: $marginLeftForBlocks; /////////////////////
 
-      &:before{
+      &:before {
         content: "";
         position: absolute;
         top: 0;
@@ -961,21 +917,21 @@ button {
         @include sprite($computer-icon);
       }
     }
-    &_text{
+    &_text {
       margin-top: 0;
       margin-bottom: 5px;
     }
 
   }
   &__partnerDepartment,
-  &__timeWork{
-    margin-top: 30px;   //////////////////////
+  &__timeWork {
+    margin-top: 30px; //////////////////////
 
-    &_fullText{
+    &_fullText {
       position: relative;
       margin-left: $marginLeftForBlocks; /////////////////////
 
-      &:before{
+      &:before {
         content: "";
         position: absolute;
         top: 0;
@@ -983,59 +939,106 @@ button {
         @include sprite($cart-of-users-icon);
       }
     }
-    &_text{
+    &_text {
       margin-top: 0;
       margin-bottom: 5px;
     }
   }
 
-
-  &__salesDepartment{
-      &:before{
-        @include sprite($tag-icon);
-      }
+  &__salesDepartment {
+    &:before {
+      @include sprite($tag-icon);
     }
-  &__timeWork{
-    &:before{
+  }
+  &__timeWork {
+    &:before {
       @include sprite($calendar-icon);
     }
   }
 
+}
 
 
+$mapHeight: 448px;
+
+.bl_map{
+  position: relative;
+  height: $mapHeight;
+
+  &__Google{
+    width: 100%;
+    height: 100%;
+  }
+
+  &__overlayMap{
+    position: absolute;
+    background: transparent;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index:2;
+    cursor: pointer;
+  }
+
+}
+
+.bl_questions{
+
+  &__block{
+    position: relative;
+    width: 100%;
+    height: 95px;
+    background-color: $color_raspberry;
+    //overflow: hidden;
+    z-index: 1;
+
+    &:before{
+      content: '';
+      background-color: #fff;
+    }
+    &:after{
+      content: '';
+      background-color: #89171a;
+    }
 
 
 
   }
 
+  &__text{
 
+    color: #fff;
+    font-family: $DIN;
+    font-size: 50px;
+    line-height: 2;
+  }
 
-
+}
 
 
 
 //////////////DECORATION
-.bl_decoration{
+.bl_decoration {
 
+  &__bottomLine {
 
-  &__bottomLine{
-
-    &:after{
+    &:after {
       content: '';
       position: absolute;
       bottom: -34px;
-      left: calc(50% - 2px );
+      left: calc(50% - 2px);
       width: 2px;
       height: 34px;
       background-color: $color_red;
     }
 
-    &_white{
-      &:after{
+    &_white {
+      &:after {
         content: '';
         position: absolute;
         bottom: -34px;
-        left: calc(50% - 2px );
+        left: calc(50% - 2px);
         width: 2px;
         height: 34px;
         background-color: white;
@@ -1043,9 +1046,9 @@ button {
     }
 
   }
-  &__leftLine{
+  &__leftLine {
 
-    &:after{
+    &:after {
       position: absolute;
       content: '';
       left: -55%;
@@ -1053,18 +1056,17 @@ button {
       width: 52px;
       height: 2px;
       background-color: $color_red;
-      z-index:2;
+      z-index: 2;
     }
   }
 }
 
-.bl_aboutCompany__title.bl_decoration__bottomLine{
-  &:after{
+.bl_aboutCompany__title.bl_decoration__bottomLine {
+  &:after {
 
     bottom: -24px;
   }
 }
-
 
 /*********************************************/
 /*FOOTER*/

@@ -56,6 +56,29 @@ $(document).ready(function () {
     });
 
 
+    // REQUEST FORM
+    var requestBlock = $(".bl_request"),
+        closeRequestBlock =$(".bl_request__close"),
+        wrappenDarkenBlock = $(".bl_darkWrapper"),
+        buttonsForActivationRequestForm = $(".bl_contactUs__button, .bl_callBack__button");
+
+    function showOrHideRequestForm(button) {
+        button.on("click", function () {
+            showBlock(wrappenDarkenBlock);
+            showBlock(requestBlock);
+
+        });
+    }
+
+    showOrHideRequestForm(buttonsForActivationRequestForm); /// show RequestForm
+    showOrHideRequestForm(closeRequestBlock); /// hide RequestForm
+    showOrHideRequestForm(wrappenDarkenBlock); /// hide RequestForm
+
+
+    // hide/show Block
+    function showBlock(element) {
+        element.toggleClass("hidden");
+    }
 
 
     //AJAX forms send

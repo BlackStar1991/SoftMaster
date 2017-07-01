@@ -11,7 +11,8 @@
 /*********************************************/
 
 
-@include font-face("DIN Pro Regular", "../fonts/DINPro/DINPro-Cond", 400, normal, eot ttf woff woff2);
+@include font-face("DIN Pro Cond", "../fonts/DINPro/DINPro-Cond", 400, normal, eot ttf woff woff2);
+@include font-face("DIN Pro Regular", "../fonts/DINProRegular/DINPro", 400, normal, eot ttf woff woff2);
 @include font-face("DIN Pro Bold", "../fonts/DINProBold/DINPro-Bold", 700, normal, eot ttf woff woff2);
 
 
@@ -107,8 +108,8 @@ button {
 
 .bl_offers {
   width: 100%;
-  min-height: 636px;
-  background: url("../img/bg_underheader.jpg") no-repeat 50% 100%;
+  min-height: 590px;
+  background: url("../img/bg_underheader.jpg")  50% -90px no-repeat;
 }
 
 .bl_presentCompany {
@@ -137,7 +138,7 @@ button {
 }
 
 .bl_presentServices {
-  margin-top: 54px; /////////////
+  margin-top: 7%; /////////////
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -161,11 +162,12 @@ button {
 
   &__title {
     vertical-align: top;
+    padding-left: 6%;
     color: $color_text;
     font-family: $DIN;
     font-size: 24px;
     font-weight: 600;
-    line-height: 50px;
+    line-height: 2;
   }
 
 }
@@ -177,20 +179,19 @@ button {
 
   &__paragraph {
     width: 100%;
-    margin-top: 30px; /////
+    margin-top: 3%; /////
 
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 30px;
   }
 }
 
 .bl_photo {
   &__computer {
-
-    width: 100%;
     position: relative;
-    margin-left: 14%;
+    width: 100%;
+    margin-left: 9%;
   }
   &__wrapper {
 
@@ -199,25 +200,25 @@ button {
   }
 
   &__img {
-
-    margin-top: 22%;
+    width: 94%;
+    margin-left: 2%;
+    margin-top: 9%;
     position: absolute;
     z-index: 2;
   }
 }
 
 .bl_contactUs__button {
-  margin-top: 49px; //////////////
+
 
   width: 430px;
   height: 61px;
   border-radius: 30px;
   background-color: $color_red;
   color: white;
-  font-family: $DIN;
+  font-family: $DINRegular;
   font-size: 24px;
   font-weight: 400;
-  line-height: 60px;
   text-transform: uppercase;
   transition: all, 0.3s;
 
@@ -228,7 +229,7 @@ button {
 }
 
 .bl_advantages {
-  margin-top: 80px; ///////////
+  margin-top: 3.5%; ///////////
   width: 100%;
 
   &__wrapper {
@@ -241,7 +242,8 @@ button {
   &__title {
     position: relative;
     display: inline-block;
-    padding-bottom: 10px;
+    //padding-bottom: 10px;
+    margin: 0;
     color: $color_text;
     font-family: $DIN;
     font-size: 50px;
@@ -251,12 +253,12 @@ button {
   }
 
   &__allAdvantages {
-    margin-top: 39px;
+    margin-top: 6.2%;
   }
   &__item {
     margin-top: 30px;
     width: 100%;
-    min-height: 131px;
+    height: 131px;
     background-color: $color_grey;
     border-radius: 50px;
   }
@@ -294,19 +296,26 @@ button {
 
     position: relative;
     float: left;
+
+    display: table;
+
+
     width: 88%; ////////////////
-    left: 55px;
-    padding-right: 55px;
+    height: 100%;
+    left: 6%;
+    padding-right: 10%;
     word-wrap: break-word;
-    //display: inline-block;
     color: $color_text;
-    font-family: $DIN;
-    font-size: 24px;
-    line-height: 30px;
-    font-weight: 400;
+
+    &_item{
+      display: table-cell;
+      vertical-align: middle;
+      font-weight: 500;
+    }
+
 
     strong {
-      font-weight: 500;
+      font-weight: 600;
     }
 
   }
@@ -314,7 +323,7 @@ button {
 }
 
 .bl_cost {
-  margin-top: 68px; //////////////////////
+  margin-top: 4.6%; //////////////////////
 
   width: 100%;
   min-height: 902px;
@@ -329,11 +338,11 @@ button {
 
   &__title {
 
-    margin-top: 135px; //////////////////
+    margin-top: 8%;
 
     position: relative;
     display: inline-block;
-    padding-bottom: 10px;
+    padding-bottom: 2px;
     color: $color_text;
     font-family: $DIN;
     font-size: 50px;
@@ -346,8 +355,8 @@ button {
 
 .bl_deadline,
 .bl_costOfIntegration {
-  margin-top: 60px;
-  //width: 478px; ///////////////////
+  margin-top: 11.5%;
+  width: 86%;
 
   &__head {
     position: relative;
@@ -427,6 +436,10 @@ button {
   @include sprite($clock-white-icon);
 }
 
+.bl_costOfIntegration{
+  margin-left: 16%;
+}
+
 .bl_costOfIntegration__main_icon-money {
   position: absolute;
   top: 50%;
@@ -457,7 +470,7 @@ button {
   &__wrapper {
     position: relative;
     text-align: center;
-    margin: -15% auto 0;
+    margin: -16% auto 0;
     width: 100%;
 
   }
@@ -483,8 +496,9 @@ button {
   &__wrapperDecorSubstrate {
 
     position: absolute;
-    left: -8%; /////////////
-    width: 120%;
+    top: 11%;
+    left: -8%;
+    width: 119%;
     border-top: 4px solid $color_redBorderTop;
     border-left: 4px solid $color_redBorderLeft;
     border-bottom: 4px solid $color_redBorderBottom;
@@ -494,10 +508,9 @@ button {
     box-sizing: border-box;
   }
   &__text {
-    padding: 5%; ////////////////////
+    padding: 6.5% 11% 6.5% 4.5%;
     margin-left: 4%; /////////////////
 
-    font-family: $DIN;
     font-size: 24px;
     line-height: 30px;
     color: $color_text;
@@ -505,7 +518,7 @@ button {
 
     &_red {
       color: $color_raspberry;
-      font-weight: 500;
+      font-weight: 600;
     }
   }
 }
@@ -517,12 +530,13 @@ button {
 
   &__title {
     margin: 0;
-    font-family: $DINBold;
+    font-family: $DIN;
+    font-weight:700;
   }
   &__text {
     line-height: 30px;
     font-family: $DIN;
-    margin-top: 15px; ////////////////
+    margin-top: 6%;
 
     &:nth-of-type(1) {
       margin-top: 0;
@@ -531,8 +545,9 @@ button {
 }
 
 .bl_webStars {
-  margin-left: 138px; ////////////
-  margin-top: 26%; /////////////
+  width: 100%;
+  margin-left: 23%; ////////////
+  margin-top: 19.2%; /////////////
   color: #fff;
   font-size: 24px;
 
@@ -542,8 +557,7 @@ button {
   }
   &__text {
     line-height: 30px;
-    font-family: $DIN;
-    margin-top: 15px; ////////////////
+    margin-top: 6%; ////////////////
 
     &:nth-of-type(1) {
       margin-top: 0;
@@ -554,7 +568,7 @@ button {
 ///////////////////////
 
 .bl_technology {
-  margin-top: 1%; ///////////////////////
+  margin-top: 0.8%; ///////////////////////
 
   width: 100%;
 
@@ -568,7 +582,7 @@ button {
   &__title {
     position: relative;
     display: inline-block;
-    padding-bottom: 10px;
+    padding-bottom: 2px;
     color: $color_text;
     font-family: $DIN;
     font-size: 50px;
@@ -586,8 +600,7 @@ button {
     position: relative;
     box-sizing: border-box;
     width: 100%;
-    min-height: 492px;
-    //border: 1px solid green;
+    margin-top: 2%;
   }
 
   &__user,
@@ -610,22 +623,17 @@ button {
 
   ////// Correct cart cube oneC
   &__cart {
-    margin-top: 11%; ///////////////////////////
-    margin-left: 8%; /////////////////////////////
-
-    &_text {
-      margin-left: -37%;
-    }
+    margin-top: 10%;
+    margin-left: 8%;
   }
 
   &__cube {
-    margin-top: 11%;
+    margin-top: 10%;
     margin-right: 8%;
   }
 
   &__oneC {
     display: block;
-    text-align: center;
     clear: both;
     margin: 0 auto;
   }
@@ -634,7 +642,7 @@ button {
   &__arrowsBoxOne,
   &__arrowsBoxThree {
     position: absolute;
-    top: 30%; //////////////
+    top: 24%; //////////////
     left: 8vw; ////////////////
     width: 78px; //////////
     height: 78px;
@@ -662,7 +670,7 @@ button {
   &__arrowsBoxTwo,
   &__arrowsBoxFour {
     position: absolute;
-    top: 31%; /////////////////////
+    top: 24%; /////////////////////
     right: 8vw;
     width: 75px;
     height: 70px;
@@ -685,7 +693,7 @@ button {
     }
   }
 
-  $topArrow: 61%;
+  $topArrow: 60%;
   /// correct arrowsBoxThree
   &__arrowsBoxThree {
     top: $topArrow;
@@ -699,10 +707,8 @@ button {
   //////////////////////////
   &__fullLine {
     display: inline-block;
-    //border: 1px solid yellow;
-    margin-left: 40px; /////////////////////////
-    //margin-right: 45px; //////////////////////
-    margin-top: 58px; ////////////
+    margin-left: 3.9%;
+    margin-top: 5%;
     height: 23px;
     width: 47vw;
   }
@@ -792,11 +798,12 @@ button {
   }
   &__text {
     width: 100%;
-    padding: 20px 0 20px 5%;
+    padding: 20px 0 20px 7%;
     color: $color_text;
     font-family: $DIN;
-    font-size: 24px;
+    font-size: 23px;
     font-weight: 400;
+    //line-height:72px;
 
     &:before {
       position: absolute;
@@ -809,7 +816,7 @@ button {
 
 .bl_ourCustomers {
   width: 100%;
-  margin-top: 91px; /////////////////////
+  margin-top: 0; /////////////////////
 
   &__wrapper {
     text-align: center;
@@ -821,10 +828,11 @@ button {
   &__title {
     position: relative;
     display: inline-block;
-    padding-bottom: 10px;
+    margin-top: 2.5%;
+    padding-bottom: 2px;
     color: $color_text;
     font-family: $DIN;
-    font-size: 30px; /////////
+    font-size: 50px; /////////
     font-weight: 400;
     line-height: 80px;
     border-bottom: 2px solid $color_red;
@@ -849,9 +857,15 @@ button {
 
   &__item {
 
+
+
   }
   &__image {
-    margin-top: 15%;
+    width: 75%;
+    margin-top: 13%;
+    &:nth-of-type(even){
+      margin-top: 36%;
+    }
   }
 
 }
@@ -859,10 +873,9 @@ button {
 .bl_contacts {
   width: 100%;
   min-height: 683px;
-  height: 100%;
-  background: url("../img/bg_contacts.png") 50% 0% no-repeat;
-
-  margin-top: 112px; /////////////////////
+  background: url("../img/bg_contacts.png") 50% 0 no-repeat;
+  background-size: cover;
+  margin-top: 6.8%; /////////////////////
 
   color: #fff;
 
@@ -875,9 +888,9 @@ button {
 
   &__title {
     position: relative;
-    margin-top: 120px; ////////////////////
+    margin-top: 7.5%;
     display: inline-block;
-    padding-bottom: 20px;
+    padding-bottom: 1.7%;
     font-family: $DIN;
     font-size: 50px; /////////
     font-weight: 400;
@@ -888,27 +901,33 @@ button {
   &__adress {
     margin-top: 32px;
 
-    &_icon {
-      float: left;
-      @include sprite($pointer-icon);
-    }
 
     &_text {
-      margin-top: 74px; //////
-      margin-left: 54px; ////////
+      position: relative;
+      margin-top: 6%;
+      text-align: center;
       font-family: $DIN;
       font-size: 40px;
       font-weight: 400;
       line-height: 30px;
+
+      &:before{
+        position: absolute;
+        top: -30%;
+        left: 10.5%;
+        content: "";
+        @include sprite($pointer-icon);
+      }
     }
   }
 
-  $marginLeftForBlocks: 16%;
+  $marginLeftForBlocks: 37%;
+  $iconLeft: -25%;
+  $iconTop: 9%;
 
   &__fullContacts{
     margin-bottom: 20%;
   }
-
 
   &__office,
   &__salesDepartment {
@@ -921,20 +940,20 @@ button {
       &:before {
         content: "";
         position: absolute;
-        top: 0;
-        left: -98px;
+        top: $iconTop;
+        left: $iconLeft;
         @include sprite($computer-icon);
       }
     }
     &_text {
       margin-top: 0;
-      margin-bottom: 5px;
+      margin-bottom: 0;
     }
 
   }
   &__partnerDepartment,
   &__timeWork {
-    margin-top: 30px; //////////////////////
+    margin-top: 3%;
 
     &_fullText {
       position: relative;
@@ -943,26 +962,32 @@ button {
       &:before {
         content: "";
         position: absolute;
-        top: 0;
-        left: -98px;
+        top: $iconTop;
+        left: $iconLeft;
         @include sprite($cart-of-users-icon);
       }
     }
     &_text {
       margin-top: 0;
-      margin-bottom: 5px;
+      margin-bottom: 0;
     }
   }
 
   &__salesDepartment {
-    &:before {
-      @include sprite($tag-icon);
+    &_fullText{
+      &:before {
+        @include sprite($tag-icon);
+      }
     }
+
   }
   &__timeWork {
-    &:before {
-      @include sprite($calendar-icon);
+    &_fullText{
+      &:before {
+        @include sprite($calendar-icon);
+      }
     }
+
   }
 
 }
@@ -1005,12 +1030,12 @@ $mapHeight: 448px;
     &:before{
       content: '';
       position: absolute;
-      left: -6%;
-      bottom: -110%;
+      left: -11%;
+      bottom: -100%;
       background-color: #fff;
       width: 30%;
       height: 100%;
-      transform: rotate(33deg);
+      transform: rotate(24deg);
 
     }
     &:after{
@@ -1041,12 +1066,14 @@ $mapHeight: 448px;
   &_callback{
     display: block;
     width: 100%;
-    margin-top: 8%; //////////////
+    margin-top: 6%; //////////////
 
     &__email{
 
       display: inline-block;
-      margin-left: 88px; ////////////////
+      margin-top: 1.5%;
+      margin-left: 6%;
+      width: 37.5%;
       padding: 20px 60px;
       border-radius: 30px;
       height: 61px;
@@ -1057,9 +1084,6 @@ $mapHeight: 448px;
       &::placeholder{
         text-align: center;
         color: darkgrey;
-        font-family: $DIN;
-        font-size: 24px;
-        font-weight: 400;
         line-height: 60px;
       }
     }
@@ -1067,14 +1091,12 @@ $mapHeight: 448px;
     &__submit{
       padding: 0 36px; //////////////
       display: inline-block;
-      margin-left: 5%; //////////////
+      margin-left: 3%; //////////////
       height: 61px;
+      width: 38%;
       border-radius: 30px;
       background-color: $color_red;
       color: white;
-      font-family: $DIN;
-      font-size: 24px;
-      font-weight: 400;
       line-height: 60px;
       outline: none;
       border-color: transparent;
@@ -1094,7 +1116,7 @@ $mapHeight: 448px;
  &__textBlock{
    display: inline-block;
    float: left;
-   width: 246px;       ///////////////
+   width: 15%;
    font-family: $DIN;
    font-size: 24px;
    font-weight: 500;
@@ -1123,7 +1145,7 @@ $mapHeight: 448px;
       content: '';
       position: absolute;
       bottom: -34px;
-      left: calc(50% - 2px);
+      left: calc(50% + 4px);
       width: 2px;
       height: 34px;
       background-color: $color_red;
@@ -1134,7 +1156,7 @@ $mapHeight: 448px;
         content: '';
         position: absolute;
         bottom: -34px;
-        left: calc(50% - 2px);
+        left: calc(50% + 4px);
         width: 2px;
         height: 34px;
         background-color: white;
@@ -1163,6 +1185,77 @@ $mapHeight: 448px;
     bottom: -24px;
   }
 }
+
+// FORM REQUEST
+.bl_darkWrapper{
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  background-color: rgba(0,0,0, .6);
+  z-index:900;
+}
+
+.bl_request{
+  $blockWidth: 300px;
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  padding: 10px;
+  margin-left: -$blockWidth /2;
+  width: $blockWidth;
+  background-color: #fff;
+  border: 2px solid $color_red;
+
+  z-index:999;
+
+
+
+  input{
+    margin-top: 5%;
+    font-size: 24px;
+    padding-right: 10px;
+  }
+
+  textarea{
+    resize: none;
+    font-size: 24px;
+  }
+
+  button{
+    margin-top: 5%;
+    border-radius: 10px;
+    padding: 2% 10px;
+    color: #fff;
+    background-color: $color_red;
+    transition: all, 0.3s;
+
+    &:hover{
+      background-color: $color_darkRaspberry;
+      transition: all, 0.3s;
+    }
+
+    &.bl_request__close{
+
+      position: absolute;
+      right: 3%;
+      top: 0%;
+      padding: 0;
+      width: 34px;
+      height: 34px;
+      font-family:$DINBold;
+      border-radius: 50%;
+      transition: all, 0.2s;
+      &:hover{
+        background-color: $color_darkRaspberry;
+        transition: all, 0.2s;
+      }
+    }
+
+
+  }
+}
+
+
 
 /*********************************************/
 /*FOOTER*/

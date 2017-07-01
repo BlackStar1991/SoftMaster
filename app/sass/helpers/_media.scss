@@ -6,20 +6,193 @@
 /* Large Devices, Wide Screens 1280px */
 @media only screen and (max-width: $site) {
 
+  .bl_addServices {
+    &__paragraph {
+      margin-top: 1%;
+    }
+  }
+
+  .bl_advantages{
+    &__text{
+      float: none;
+      width: 70vw;
+      padding-right: 0;
+    }
+  }
+
+  .bl_cost{
+    margin-top: 0;
+
+    &__title{
+      margin-top: 12%;
+    }
+
+  }
+
 }
 
 /* Medium Devices, Desktops 992px */
 @media only screen and (max-width: $tablet-landscape) {
+
+  .bl_mainNavigation{
+    &__fullGroup{
+      padding-bottom: 3%;
+    }
+  }
+
+  .bl_advantages{
+    &__title{
+      font-size: 7vw;
+    line-height: normal;
+    }
+    &__text{
+      width: 55vw;
+    }
+
+  }
+
+  .bl_cost{
+
+    &__title{
+      margin-top: 18%;
+      line-height: normal;
+    }
+
+  }
+
+
 
 }
 
 /* Small Devices, Tablets 768px */
 @media only screen and (max-width: $tablet) {
 
+
+  .bl_advantages{
+    &__text{
+      width: 72vw;
+      left: 2%;
+    }
+  }
+
+
 }
+
+@media only screen and (max-width: 635px) {
+
+
+  .bl_advantages{
+    &__text{
+      width: 65vw;
+    }
+  }
+
+
+}
+
+
+
+@media only screen and (max-width: 560px) {
+  .bl_presentCompany{
+    &_name{
+      &__red{
+        display: block;
+      }
+    }
+  }
+
+
+  .bl_addServices {
+    &__paragraph {
+      margin-top: 4%;
+    }
+  }
+
+
+  .bl_contactUs {
+    &__button {
+      margin-top: 5%;
+      width: 100%;
+    }
+  }
+
+}
+
 
 /* Extra Small Devices, Phones 480px */
 @media only screen and (max-width: $phone-landscape) {
+
+  .bl_logo{
+    float: none;
+    display: block;
+    text-align: center;
+    margin: 1% auto;
+    width: 100%;
+  }
+  .bl_callBack{
+    float: none;
+    display: block;
+    text-align: center;
+    margin: 5% auto 0;
+    width: 100%;
+
+    &__telephone{
+      width: 100%;
+      margin: 0 auto;
+      float: none;
+    }
+
+    &__telNumber{
+      font-size: 30px;
+      padding: 0;
+    }
+    &__button{
+      width: 100%;
+      height:auto;
+      margin-top: 2%;
+      margin-left: 0;
+      font-size: 30px;
+    }
+  }
+
+
+  .bl_mainNavigation{
+
+    &__item{
+      margin-top: 5%;
+    }
+
+    &__fullGroup{
+      padding-bottom: 0;
+      flex-direction: column;
+    }
+    &__link{
+      padding:0;
+    }
+  }
+
+
+  .bl_advantages{
+    &__backgroundForIcons{
+      float: none;
+      margin: 5% auto 2%;
+      display: block;
+    }
+
+    &__text{
+      width: 100%;
+    }
+  }
+
+
+  .bl_cost{
+    &__title{
+      margin-top: 20%;
+      font-size: 38px;
+    }
+
+  }
+
 
   /*Disable Animation on Mobile Devices*/
   .animated {
@@ -46,6 +219,17 @@
 
 /* Custom, iPhone Retina 320px */
 @media only screen and (max-width: $phone) {
+
+
+
+
+
+  .bl_cost{
+    &__title{
+      font-size: 32px;
+    }
+
+  }
 
 }
 

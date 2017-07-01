@@ -108,7 +108,7 @@ button {
 
 .bl_offers {
   width: 100%;
-  min-height: 590px;
+  min-height: 570px;
   background: url("../img/bg_underheader.jpg")  50% -90px no-repeat;
 }
 
@@ -258,7 +258,7 @@ button {
   &__item {
     margin-top: 30px;
     width: 100%;
-    height: 131px;
+    min-height: 131px;
     background-color: $color_grey;
     border-radius: 50px;
   }
@@ -401,12 +401,13 @@ button {
     min-height: 219px;
     background-color: #fff;
     border: 2px solid $color_red;
+    overflow: hidden;
 
     &_icon {
       position: relative;
       display: inline-block;
-      margin-top: 68px;
-      margin-left: 47px;
+      margin-top: 15%;
+      margin-left: 10%;
       width: 88px;
       height: 88px;
       border-radius: 50%;
@@ -416,14 +417,12 @@ button {
 
     &_text {
       display: inline-block;
-      margin-top: 96px;
-      margin-left: 56px;
+      margin-top: 16%;
+      margin-left: 9%;
       vertical-align: top;
       color: $color_text;
-      font-family: $DIN;
       font-size: 47px;
-      font-weight: 500;
-      line-height: 30px;
+      font-weight: 600;
     }
   }
 }

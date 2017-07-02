@@ -3,6 +3,65 @@
 /*Desktop First Method*/
 /*********************************************/
 
+@media only screen and (max-width: 1430px) {
+
+  .bl_aboutCompany {
+    &__wrapperDecorSubstrate {
+      margin-left: 0;
+      width: auto;
+    }
+  }
+
+  .bl_webStars {
+    margin-left: 0;
+  }
+
+  .bl_fullTechnologies {
+
+    $topPositionArrow12: 203%;
+    &__arrowsBoxOne {
+      left: 2%;
+      top: $topPositionArrow12;
+      transform: rotate(45deg);
+    }
+    &__arrowsBoxTwo {
+      right: 2%;
+      top: $topPositionArrow12;
+      transform: rotate(-45deg);
+    }
+
+    $topPositionArrow34: 345%;
+    &__arrowsBoxThree {
+      top: $topPositionArrow34;
+      transform: rotate(-45deg);
+    }
+    &__arrowsBoxFour {
+      top: $topPositionArrow34;
+      transform: rotate(45deg);
+    }
+
+    &__cart {
+      clear: both;
+      margin-left: 0;
+    }
+    &__cube {
+      margin-right: 0;
+    }
+
+    &__oneC {
+      position: absolute;
+      left: calc(50% - 64px);
+      top: 314%;
+    }
+
+  }
+
+  .bl_goodMethod {
+    margin-top: 36%;
+  }
+
+}
+
 /* Large Devices, Wide Screens 1280px */
 @media only screen and (max-width: $site) {
 
@@ -12,21 +71,122 @@
     }
   }
 
-  .bl_advantages{
-    &__text{
+  .bl_advantages {
+    &__text {
       float: none;
       width: 70vw;
       padding-right: 0;
     }
   }
 
-  .bl_cost{
+  .bl_cost {
     margin-top: 0;
 
-    &__title{
+    &__title {
       margin-top: 12%;
     }
 
+  }
+
+  .bl_deadline,
+  .bl_costOfIntegration {
+    &__main {
+
+      &_text {
+        font-size: 40px;
+      }
+    }
+  }
+
+  .bl_fullTechnologies {
+
+    &__backgroundForIcons {
+      margin-top: 40%;
+
+    }
+    &__fullLine {
+      margin-top: 11%;
+    }
+
+    $topBox12: 186%;
+    &__arrowsBoxOne {
+      top: $topBox12;
+    }
+    &__arrowsBoxTwo {
+      top: $topBox12;
+    }
+
+    $topBox34: 260%;
+    &__arrowsBoxThree {
+      top: $topBox34;
+    }
+    &__arrowsBoxFour {
+      top: $topBox34;
+    }
+
+    &__oneC {
+
+      top: 212%;
+    }
+
+  }
+
+  .bl_goodMethod {
+    margin-top: 46%;
+  }
+
+  .bl_contacts {
+    min-height: initial;
+
+    &__adress {
+      &_text {
+        &:before {
+          left: 8%;
+        }
+      }
+    }
+  }
+
+}
+
+@media only screen and (max-width: 1031px) {
+
+  .bl_fullTechnologies {
+
+    &__arrow {
+      position: absolute;
+    }
+
+    &__backgroundForIcons {
+      margin-top: 75%;
+
+    }
+    &__fullLine {
+      position: relative;
+      margin-top: 17%;
+
+    }
+
+    &__oneC {
+
+      top: 188%;
+    }
+
+  }
+
+  .bl_goodMethod {
+    margin-top: 54%;
+  }
+
+  .bl_contacts {
+
+    &__adress {
+      &_text {
+        &:before {
+          left: 8%;
+        }
+      }
+    }
   }
 
 }
@@ -34,80 +194,279 @@
 /* Medium Devices, Desktops 992px */
 @media only screen and (max-width: $tablet-landscape) {
 
-  .bl_mainNavigation{
-    &__fullGroup{
+  .bl_mainNavigation {
+    &__fullGroup {
       padding-bottom: 3%;
     }
   }
 
-  .bl_advantages{
-    &__title{
+  .bl_advantages {
+    &__title {
       font-size: 7vw;
-    line-height: normal;
+      line-height: normal;
     }
-    &__text{
+    &__text {
       width: 55vw;
     }
 
   }
 
-  .bl_cost{
+  .bl_cost {
 
-    &__title{
+    min-height: initial;
+
+    &__title {
       margin-top: 18%;
       line-height: normal;
     }
 
   }
 
+  .bl_deadline,
+  .bl_costOfIntegration {
+    margin-top: 8%;
+    margin-left: 11.5%;
 
+    &__main {
+
+      &_icon {
+        margin-left: 7%;
+      }
+
+      &_text {
+
+      }
+    }
+  }
+
+  .bl_aboutCompany {
+
+    &__absolute {
+      position: static;
+      margin-top: 0;
+    }
+
+    &__wrapperDecorSubstrate {
+      position: relative;
+      left: 0;
+      margin-left: 0;
+    }
+    &__wrapperUnderText {
+      margin-top: 12%;
+    }
+
+    &__wrapper {
+      margin: 0;
+    }
+  }
+
+  .bl_softMaster, .bl_webStars {
+    margin-top: 5%;
+
+    &__title {
+      text-align: center;
+    }
+  }
+
+  .bl_webStars {
+    &__text {
+      margin-top: 8%;
+    }
+  }
+
+  .bl_fullTechnologies {
+
+    &__backgroundForIcons {
+      margin-top: 15%;
+
+    }
+    &__dushLine {
+      width: 85%;
+    }
+
+    &__fullLine {
+      margin-top: 13%;
+      width: 50%;
+    }
+
+    &__cart {
+      margin-top: 17%;
+    }
+    &__cube {
+      margin-top: 17%;
+    }
+
+    $topBox12: 182%;
+    &__arrowsBoxOne {
+      top: $topBox12;
+    }
+    &__arrowsBoxTwo {
+      top: $topBox12;
+    }
+
+    $topBox34: 283%;
+    $leftrightBox34: 25%;
+    &__arrowsBoxThree {
+      top: $topBox34;
+      left: $leftrightBox34;
+    }
+    &__arrowsBoxFour {
+      top: $topBox34;
+      right: $leftrightBox34;
+    }
+
+    &__oneC {
+
+      top: 246%;
+    }
+
+  }
+
+  .bl_goodMethod {
+    margin-top: 64%;
+
+    &__adress {
+      &_text {
+        &:before {
+          left: -8%;
+        }
+      }
+    }
+  }
+
+  .bl_contacts {
+    &__title {
+      margin-top: 12.5%;
+    }
+    &__adress {
+      &_text {
+        &:before {
+          left: -10%;
+        }
+      }
+    }
+
+  }
+
+  .bl_questions_callback {
+    &__submit {
+      margin-top: 6%;
+      margin-left: 6%;
+    }
+  }
 
 }
 
 /* Small Devices, Tablets 768px */
 @media only screen and (max-width: $tablet) {
 
-
-  .bl_advantages{
-    &__text{
+  .bl_advantages {
+    &__text {
       width: 72vw;
       left: 2%;
     }
   }
 
+  .bl_technology {
+    &__title {
+      font-size: 35px;
+    }
+  }
+
+  .bl_goodMethod {
+    margin-top: 70%;
+
+    &__text {
+      margin-left: 1%;
+    }
+  }
+
+  .bl_contacts {
+    &__title {
+      margin-top: 12.5%;
+    }
+    &__adress {
+      &_text {
+
+        font-size: 30px;
+        &:before {
+          display: none;
+        }
+      }
+    }
+
+  }
+
+  .bl_contacts {
+    & &__title {
+      margin-top: 20.5%;
+    }
+  }
+
+  .bl_questions_callback{
+
+
+    &__email,
+    &__submit{
+      width: 60%;
+    }
+
+  }
+
+  .bl_questions__textBlock{
+    width: 30%;
+  }
 
 }
 
 @media only screen and (max-width: 635px) {
 
-
-  .bl_advantages{
-    &__text{
+  .bl_advantages {
+    &__text {
       width: 65vw;
     }
   }
 
+  .bl_fullTechnologies {
+
+    &__fullLine {
+      width: 40%;
+    }
+
+    &__oneC {
+
+      top: 145%;
+    }
+
+    &__arrowsBoxThree {
+      transform: rotate(-80deg);
+    }
+    &__arrowsBoxFour {
+      transform: rotate(80deg);
+    }
+
+  }
+
+  .bl_goodMethod {
+    margin-top: 80%;
+  }
 
 }
 
-
-
 @media only screen and (max-width: 560px) {
-  .bl_presentCompany{
-    &_name{
-      &__red{
+  .bl_presentCompany {
+    &_name {
+      &__red {
         display: block;
       }
     }
   }
-
 
   .bl_addServices {
     &__paragraph {
       margin-top: 4%;
     }
   }
-
 
   .bl_contactUs {
     &__button {
@@ -116,119 +475,205 @@
     }
   }
 
-}
+  .bl_softMaster {
+    &__text {
+      margin-top: 1%;
+    }
+  }
 
+  .bl_goodMethod {
+    margin-top: 90%;
+
+    &__text {
+      margin-left: 1.5%;
+    }
+  }
+
+  .bl_contacts__office_fullText, .bl_contacts__salesDepartment_fullText,
+  .bl_contacts__partnerDepartment_fullText, .bl_contacts__timeWork_fullText {
+    margin-left: 20%;
+  }
+
+  .bl_contacts {
+    & &__title {
+      margin-top: 30.5%;
+    }
+  }
+
+}
 
 /* Extra Small Devices, Phones 480px */
 @media only screen and (max-width: $phone-landscape) {
 
-  .bl_logo{
+  .bl_logo {
     float: none;
     display: block;
     text-align: center;
     margin: 1% auto;
     width: 100%;
   }
-  .bl_callBack{
+  .bl_callBack {
     float: none;
     display: block;
     text-align: center;
     margin: 5% auto 0;
     width: 100%;
 
-    &__telephone{
+    &__telephone {
       width: 100%;
       margin: 0 auto;
       float: none;
     }
 
-    &__telNumber{
+    &__telNumber {
       font-size: 30px;
       padding: 0;
     }
-    &__button{
+    &__button {
       width: 100%;
-      height:auto;
+      height: auto;
       margin-top: 2%;
       margin-left: 0;
       font-size: 30px;
     }
   }
 
+  .bl_mainNavigation {
 
-  .bl_mainNavigation{
-
-    &__item{
+    &__item {
       margin-top: 5%;
     }
 
-    &__fullGroup{
+    &__fullGroup {
       padding-bottom: 0;
       flex-direction: column;
     }
-    &__link{
-      padding:0;
+    &__link {
+      padding: 0;
     }
   }
 
-
-  .bl_advantages{
-    &__backgroundForIcons{
+  .bl_advantages {
+    &__backgroundForIcons {
       float: none;
       margin: 5% auto 2%;
       display: block;
     }
 
-    &__text{
+    &__text {
       width: 100%;
     }
   }
 
-
-  .bl_cost{
-    &__title{
+  .bl_cost {
+    &__title {
       margin-top: 20%;
       font-size: 38px;
     }
 
   }
 
+  .bl_deadline,
+  .bl_costOfIntegration {
 
-  /*Disable Animation on Mobile Devices*/
-  .animated {
-    /*CSS transitions*/
-    -o-transition-property: none !important;
-    -moz-transition-property: none !important;
-    -ms-transition-property: none !important;
-    -webkit-transition-property: none !important;
-    transition-property: none !important;
-    /*CSS transforms*/
-    -o-transform: none !important;
-    -moz-transform: none !important;
-    -ms-transform: none !important;
-    -webkit-transform: none !important;
-    transform: none !important;
-    /*CSS animations*/
-    -webkit-animation: none !important;
-    -moz-animation: none !important;
-    -o-animation: none !important;
-    -ms-animation: none !important;
-    animation: none !important;
+    &__head {
+      &_text {
+        text-align: center;
+        margin: 0 auto;
+        font-size: 19px;
+      }
+
+    }
+
+    &__main {
+      min-height: initial;
+
+      &_text {
+        margin-top: 24%;
+        margin-left: 1%;
+        font-size: 25px;
+      }
+    }
   }
+
+  .bl_softMaster,
+  .bl_webStars {
+    font-size: 17px;
+
+    &__text {
+      margin-top: 2%;
+    }
+
+  }
+
+  .bl_goodMethod {
+    margin-top: 140%;
+
+    &__text {
+      margin-left: 3.5%;
+    }
+  }
+
+  .bl_questions {
+    &__text {
+      padding-left: 3%;
+    }
+  }
+
+
+  .bl_questions_callback{
+
+
+    &__email,
+    &__submit{
+      padding: 0;
+    }
+
+  }
+
+
 }
 
 /* Custom, iPhone Retina 320px */
 @media only screen and (max-width: $phone) {
 
-
-
-
-
-  .bl_cost{
-    &__title{
+  .bl_cost {
+    &__title {
       font-size: 32px;
     }
 
+  }
+
+  .bl_deadline,
+  .bl_costOfIntegration {
+
+    &__main {
+      min-height: initial;
+
+      &_text {
+        font-size: 24px;
+      }
+    }
+  }
+
+  .bl_goodMethod {
+    margin-top: 165%;
+
+    &__text {
+      font-size: 22px;
+      margin-left: 4.5%;
+    }
+  }
+
+  .bl_contacts {
+
+    &__title {
+      margin-top: 40.5%;
+    }
+
+    &__office {
+      margin-top: 120px;
+    }
   }
 
 }

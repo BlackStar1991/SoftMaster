@@ -1927,6 +1927,46 @@ button {
 /*********************************************/
 /*Desktop First Method*/
 /*********************************************/
+@media only screen and (max-width: 1430px) {
+  .bl_aboutCompany__wrapperDecorSubstrate {
+    margin-left: 0;
+    width: auto; }
+  .bl_webStars {
+    margin-left: 0; }
+  .bl_fullTechnologies__arrowsBoxOne {
+    left: 2%;
+    top: 203%;
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg); }
+  .bl_fullTechnologies__arrowsBoxTwo {
+    right: 2%;
+    top: 203%;
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg); }
+  .bl_fullTechnologies__arrowsBoxThree {
+    top: 345%;
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg); }
+  .bl_fullTechnologies__arrowsBoxFour {
+    top: 345%;
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg); }
+  .bl_fullTechnologies__cart {
+    clear: both;
+    margin-left: 0; }
+  .bl_fullTechnologies__cube {
+    margin-right: 0; }
+  .bl_fullTechnologies__oneC {
+    position: absolute;
+    left: calc(50% - 64px);
+    top: 314%; }
+  .bl_goodMethod {
+    margin-top: 36%; } }
+
 /* Large Devices, Wide Screens 1280px */
 @media only screen and (max-width: 80em) {
   .bl_addServices__paragraph {
@@ -1938,7 +1978,45 @@ button {
   .bl_cost {
     margin-top: 0; }
     .bl_cost__title {
-      margin-top: 12%; } }
+      margin-top: 12%; }
+  .bl_deadline__main_text,
+  .bl_costOfIntegration__main_text {
+    font-size: 40px; }
+  .bl_fullTechnologies__backgroundForIcons {
+    margin-top: 40%; }
+  .bl_fullTechnologies__fullLine {
+    margin-top: 11%; }
+  .bl_fullTechnologies__arrowsBoxOne {
+    top: 186%; }
+  .bl_fullTechnologies__arrowsBoxTwo {
+    top: 186%; }
+  .bl_fullTechnologies__arrowsBoxThree {
+    top: 260%; }
+  .bl_fullTechnologies__arrowsBoxFour {
+    top: 260%; }
+  .bl_fullTechnologies__oneC {
+    top: 212%; }
+  .bl_goodMethod {
+    margin-top: 46%; }
+  .bl_contacts {
+    min-height: initial; }
+    .bl_contacts__adress_text:before {
+      left: 8%; } }
+
+@media only screen and (max-width: 1031px) {
+  .bl_fullTechnologies__arrow {
+    position: absolute; }
+  .bl_fullTechnologies__backgroundForIcons {
+    margin-top: 75%; }
+  .bl_fullTechnologies__fullLine {
+    position: relative;
+    margin-top: 17%; }
+  .bl_fullTechnologies__oneC {
+    top: 188%; }
+  .bl_goodMethod {
+    margin-top: 54%; }
+  .bl_contacts__adress_text:before {
+    left: 8%; } }
 
 /* Medium Devices, Desktops 992px */
 @media only screen and (max-width: 62em) {
@@ -1949,19 +2027,111 @@ button {
     line-height: normal; }
   .bl_advantages__text {
     width: 55vw; }
-  .bl_cost__title {
-    margin-top: 18%;
-    line-height: normal; } }
+  .bl_cost {
+    min-height: initial; }
+    .bl_cost__title {
+      margin-top: 18%;
+      line-height: normal; }
+  .bl_deadline,
+  .bl_costOfIntegration {
+    margin-top: 8%;
+    margin-left: 11.5%; }
+    .bl_deadline__main_icon,
+    .bl_costOfIntegration__main_icon {
+      margin-left: 7%; }
+  .bl_aboutCompany__absolute {
+    position: static;
+    margin-top: 0; }
+  .bl_aboutCompany__wrapperDecorSubstrate {
+    position: relative;
+    left: 0;
+    margin-left: 0; }
+  .bl_aboutCompany__wrapperUnderText {
+    margin-top: 12%; }
+  .bl_aboutCompany__wrapper {
+    margin: 0; }
+  .bl_softMaster, .bl_webStars {
+    margin-top: 5%; }
+    .bl_softMaster__title, .bl_webStars__title {
+      text-align: center; }
+  .bl_webStars__text {
+    margin-top: 8%; }
+  .bl_fullTechnologies__backgroundForIcons {
+    margin-top: 15%; }
+  .bl_fullTechnologies__dushLine {
+    width: 85%; }
+  .bl_fullTechnologies__fullLine {
+    margin-top: 13%;
+    width: 50%; }
+  .bl_fullTechnologies__cart {
+    margin-top: 17%; }
+  .bl_fullTechnologies__cube {
+    margin-top: 17%; }
+  .bl_fullTechnologies__arrowsBoxOne {
+    top: 182%; }
+  .bl_fullTechnologies__arrowsBoxTwo {
+    top: 182%; }
+  .bl_fullTechnologies__arrowsBoxThree {
+    top: 283%;
+    left: 25%; }
+  .bl_fullTechnologies__arrowsBoxFour {
+    top: 283%;
+    right: 25%; }
+  .bl_fullTechnologies__oneC {
+    top: 246%; }
+  .bl_goodMethod {
+    margin-top: 64%; }
+    .bl_goodMethod__adress_text:before {
+      left: -8%; }
+  .bl_contacts__title {
+    margin-top: 12.5%; }
+  .bl_contacts__adress_text:before {
+    left: -10%; }
+  .bl_questions_callback__submit {
+    margin-top: 6%;
+    margin-left: 6%; } }
 
 /* Small Devices, Tablets 768px */
 @media only screen and (max-width: 48em) {
   .bl_advantages__text {
     width: 72vw;
-    left: 2%; } }
+    left: 2%; }
+  .bl_technology__title {
+    font-size: 35px; }
+  .bl_goodMethod {
+    margin-top: 70%; }
+    .bl_goodMethod__text {
+      margin-left: 1%; }
+  .bl_contacts__title {
+    margin-top: 12.5%; }
+  .bl_contacts__adress_text {
+    font-size: 30px; }
+    .bl_contacts__adress_text:before {
+      display: none; }
+  .bl_contacts .bl_contacts__title {
+    margin-top: 20.5%; }
+  .bl_questions_callback__email, .bl_questions_callback__submit {
+    width: 60%; }
+  .bl_questions__textBlock {
+    width: 30%; } }
 
 @media only screen and (max-width: 635px) {
   .bl_advantages__text {
-    width: 65vw; } }
+    width: 65vw; }
+  .bl_fullTechnologies__fullLine {
+    width: 40%; }
+  .bl_fullTechnologies__oneC {
+    top: 145%; }
+  .bl_fullTechnologies__arrowsBoxThree {
+    -webkit-transform: rotate(-80deg);
+        -ms-transform: rotate(-80deg);
+            transform: rotate(-80deg); }
+  .bl_fullTechnologies__arrowsBoxFour {
+    -webkit-transform: rotate(80deg);
+        -ms-transform: rotate(80deg);
+            transform: rotate(80deg); }
+  .bl_goodMethod {
+    margin-top: 80%; } }
 
 @media only screen and (max-width: 560px) {
   .bl_presentCompany_name__red {
@@ -1970,7 +2140,18 @@ button {
     margin-top: 4%; }
   .bl_contactUs__button {
     margin-top: 5%;
-    width: 100%; } }
+    width: 100%; }
+  .bl_softMaster__text {
+    margin-top: 1%; }
+  .bl_goodMethod {
+    margin-top: 90%; }
+    .bl_goodMethod__text {
+      margin-left: 1.5%; }
+  .bl_contacts__office_fullText, .bl_contacts__salesDepartment_fullText,
+  .bl_contacts__partnerDepartment_fullText, .bl_contacts__timeWork_fullText {
+    margin-left: 20%; }
+  .bl_contacts .bl_contacts__title {
+    margin-top: 30.5%; } }
 
 /* Extra Small Devices, Phones 480px */
 @media only screen and (max-width: 30em) {
@@ -2017,22 +2198,53 @@ button {
   .bl_cost__title {
     margin-top: 20%;
     font-size: 38px; }
-  /*Disable Animation on Mobile Devices*/
-  .animated {
-    /*CSS transitions*/
-    transition-property: none !important;
-    /*CSS transforms*/
-    -ms-transform: none !important;
-    -webkit-transform: none !important;
-    transform: none !important;
-    /*CSS animations*/
-    -webkit-animation: none !important;
-    animation: none !important; } }
+  .bl_deadline__head_text,
+  .bl_costOfIntegration__head_text {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 19px; }
+  .bl_deadline__main,
+  .bl_costOfIntegration__main {
+    min-height: initial; }
+    .bl_deadline__main_text,
+    .bl_costOfIntegration__main_text {
+      margin-top: 24%;
+      margin-left: 1%;
+      font-size: 25px; }
+  .bl_softMaster,
+  .bl_webStars {
+    font-size: 17px; }
+    .bl_softMaster__text,
+    .bl_webStars__text {
+      margin-top: 2%; }
+  .bl_goodMethod {
+    margin-top: 140%; }
+    .bl_goodMethod__text {
+      margin-left: 3.5%; }
+  .bl_questions__text {
+    padding-left: 3%; }
+  .bl_questions_callback__email, .bl_questions_callback__submit {
+    padding: 0; } }
 
 /* Custom, iPhone Retina 320px */
 @media only screen and (max-width: 20em) {
   .bl_cost__title {
-    font-size: 32px; } }
+    font-size: 32px; }
+  .bl_deadline__main,
+  .bl_costOfIntegration__main {
+    min-height: initial; }
+    .bl_deadline__main_text,
+    .bl_costOfIntegration__main_text {
+      font-size: 24px; }
+  .bl_goodMethod {
+    margin-top: 165%; }
+    .bl_goodMethod__text {
+      font-size: 22px;
+      margin-left: 4.5%; }
+  .bl_contacts__title {
+    margin-top: 40.5%; }
+  .bl_contacts__office {
+    margin-top: 120px; } }
 
 /*********************************************/
 /*Mobile First Method*/

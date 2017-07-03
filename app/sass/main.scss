@@ -144,6 +144,10 @@ button {
   flex-wrap: wrap;
   justify-content: space-between;
 
+  &__item{
+    width: 33%;
+  }
+
   &_icon {
 
     &__key {

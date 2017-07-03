@@ -427,6 +427,15 @@
     }
   }
 
+  .bl_presentServices{
+
+    &__title{
+      padding-left: 0;
+      display: block;
+    }
+  }
+
+
   .bl_fullTechnologies {
 
     &__fullLine {
@@ -552,6 +561,15 @@
       padding: 0;
     }
   }
+
+  //.bl_presentServices{
+  //
+  //
+  //  &__item{
+  //    width: 24%;
+  //  }
+  //}
+
 
   .bl_advantages {
     &__backgroundForIcons {

@@ -1,6 +1,7 @@
 {
   "name": "start_html",
   "version": "2.0.0",
+  "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -20,17 +21,5 @@
     "gulp.spritesmith": "^6.2.1",
     "imagemin-pngquant": "^5.0.0",
     "main-bower-files": "^2.13.1"
-  },
-  "main": "gulpfile.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/BlackStar1991/SoftMaster.git"
-  },
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/BlackStar1991/SoftMaster/issues"
-  },
-  "homepage": "https://github.com/BlackStar1991/SoftMaster#readme",
-  "dependencies": {},
-  "description": ""
+  }
 }
